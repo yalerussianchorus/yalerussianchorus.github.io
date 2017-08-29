@@ -1,0 +1,56 @@
+@import 'sticky_footer.css';
+@import 'carousel_fade.css';
+@import 'cover.css';
+
+@font-face {
+	font-family: "BebasNeue";
+	src: url("../fonts/BebasNeue Bold.ttf");
+}
+
+@font-face {
+    font-family: "MuseoSans";
+    src: url("../fonts/museo_sans.ttf");
+}
+
+@font-face {
+    font-family: "MuseoSlab"
+    src: url("../fonts/museo_slab.ttf");
+}
+
+#top {
+    font-family: "BebasNeue";
+    font-size: 30pt;
+    letter-spacing: 2px;
+}
+
+#logo {
+    height: 70px;
+    width: 70px;
+}
+
+#myTabs {
+    font-family: "MuseoSlab";
+}
+
+#maintext {
+    margin-top: 15%;
+}
+
+#myCarousel {
+    display: block;
+    margin: auto;
+    height: 272px;
+    width: 275px;
+    overflow: hidden;
+    border: 2px solid white;
+}
+
+#splash {
+    font-size: 35pt;
+    font-weight: bold;
+}
+
+.masthead {
+    background: #333333;
+    height: 80px;
+}
