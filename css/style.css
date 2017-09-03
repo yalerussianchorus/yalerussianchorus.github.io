@@ -85,26 +85,19 @@ body {
     margin-top: 2%;
 }
 
-#textblock {
-    background: #FFFFFF;
-    border: 20px solid #FFFFFF;
-    border-top: 10px solid #FFFFFF;
-    border-bottom: 30px solid #FFFFFF;
-    border-radius: 25px;
-}
-
-#aboutCol {
+#about {
     background: #EDE1D1;
     border: 20px solid #EDE1D1;
 }
 
-#audCol {
+#rush {
     background: #A2C3E3;
     border: 20px solid #A2C3E3;
 }
 
-#perfCol {
-    background:#FFFFFF;
+#perf {
+    background: #FFFFFF;
+    border: 20px solid #FFFFFF;
 }
 
 #performances {
