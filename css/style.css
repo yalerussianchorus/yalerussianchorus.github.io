@@ -1,6 +1,5 @@
 @import 'sticky_footer.css';
 @import 'carousel_fade.css';
-@import 'cover.css';
 
 @font-face {
     font-family: "BulgMod";
@@ -38,14 +37,24 @@
     font-family: "OpenSansL";
     src: url("../fonts/OpenSans-Light.ttf");
 }
+@font-face {
+    font-family: "BitterR";
+    src: url("../fonts/Bitter-Regular.otf");
+}
+
 
 #topTitle {
     font-family: "BulgMod";
-    font-size: 30pt;
+    font-size: 25pt;
+}
+
+#myNav a {
+    color: #262228;
 }
 
 #myNav {
-    background-color: #303030;
+    background-color: #FFFFFF;
+    color: #FFFFFF;
     height: 75px;
 }
 
@@ -62,13 +71,44 @@
 
 #myTabs {
     font-family: "OpenSansL";
-    font-size: 25pt;
+    font-size: 15pt;
     margin-right: 2%;
 }
 
+body {
+    background: #F4F4F4;
+}
+
 #maintext {
-    margin-top: 15%;
-    font-family: "OpenSansL";
+    font-family: "BitterR";
+    color: #262228;
+    margin-top: 2%;
+}
+
+#textblock {
+    background: #FFFFFF;
+    border: 20px solid #FFFFFF;
+    border-top: 10px solid #FFFFFF;
+    border-bottom: 30px solid #FFFFFF;
+    border-radius: 25px;
+}
+
+#aboutCol {
+    background: #EDE1D1;
+    border: 20px solid #EDE1D1;
+}
+
+#audCol {
+    background: #A2C3E3;
+    border: 20px solid #A2C3E3;
+}
+
+#perfCol {
+    background:#FFFFFF;
+}
+
+#performances {
+    font-size: 15px;
 }
 
 #myCarousel {
@@ -77,15 +117,28 @@
     height: 272px;
     width: 275px;
     overflow: hidden;
-    border: 2px solid white;
+    outside-border: 10px solid white;
 }
 
-.masthead {
-    background: #333333;
-    height: 80px;
+#socials {
+    margin-left: 40%;
+}
+
+#social {
+    height: 50px;
+    width: 50px;
+}
+
+#conText {
+    margin-top: 5%;
 }
 
 .footer {
-    background-color: #303030;
+    background-color: #F4F4F4;
     font-family: "OpenSansL";
+    color: #262228;
+}
+
+.footer p {
+    margin-left: 2%;
 }
