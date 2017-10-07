@@ -56,29 +56,26 @@
 
 #topTitle {
     font-family: "BulgMod";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
-#myNav a {
+#my-nav a {
     color: #262228;
 }
 
-#myNav {
+#my-nav {
     background-color: #FFFFFF;
     color: #FFFFFF;
-    height: 75px;
 }
-
 
 #logo {
     height: 80px;
     width: 80px;
 }
 
-#myTabs {
+#my-tabs {
     font-family: "OpenSansL";
-    font-size: 15pt;
-    margin-right: 2%;
+    font-size: 13pt;
 }
 
 body {
