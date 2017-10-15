@@ -6,53 +6,13 @@
     src: url("../fonts/BulgariaModerna.otf");
 }
 @font-face {
-    font-family: "ColabR";
-    src: url("../fonts/ColabReg.otf");
-}
-@font-face {
-    font-family: "ColabL";
-    src: url("../fonts/ColabLig.otf");
-}
-@font-face {
-    font-family: "ColabT";
-    src: url("../fonts/ColabThi.otf");
-}
-@font-face {
-	font-family: "BebasNeue";
-	src: url("../fonts/BebasNeue Bold.ttf");
-}
-@font-face {
-    font-family: "MuseoSans";
-    src: url("../fonts/museo_sans.ttf");
-}
-@font-face {
-    font-family: "MuseoSlab"
-    src: url("../fonts/museo_slab.ttf");
-}
-@font-face {
     font-family: "OpenSansL";
     src: url("../fonts/OpenSans-Light.ttf");
 }
 @font-face {
-    font-family: "BitterR";
-    src: url("../fonts/Bitter-Regular.otf");
-}
-
-@font-face {
     font-family: "LatoL";
     src: url("../fonts/Lato-Light.ttf");
 }
-
-@font-face {
-    font-family: "LatoT";
-    src: url("../fonts/Lato-Thin.ttf");
-}
-
-@font-face {
-    font-family: "LatoR";
-    src: url("../fonts/Lato-Regular.ttf");
-}
-
 
 #topTitle {
     font-family: "BulgMod";
@@ -131,6 +91,11 @@ body {
 
 #conText {
     margin-top: 5%;
+}
+
+#s-photo {
+    height: 150px;
+    width: 225px;
 }
 
 .footer {
