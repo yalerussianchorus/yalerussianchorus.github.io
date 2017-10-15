@@ -1,113 +1,146 @@
-@import 'sticky_footer.css';
-@import 'carousel_fade.css';
+@import "sticky_footer.css";
+@import "carousel_fade.css";
 
 @font-face {
-    font-family: "BulgMod";
-    src: url("../fonts/BulgariaModerna.otf");
+  font-family: "BulgMod";
+  src: url("../fonts/BulgariaModerna.otf");
 }
 @font-face {
-    font-family: "OpenSansL";
-    src: url("../fonts/OpenSans-Light.ttf");
+  font-family: "OpenSansL";
+  src: url("../fonts/OpenSans-Light.ttf");
 }
 @font-face {
-    font-family: "LatoL";
-    src: url("../fonts/Lato-Light.ttf");
+  font-family: "LatoL";
+  src: url("../fonts/Lato-Light.ttf");
 }
 
 #topTitle {
-    font-family: "BulgMod";
-    font-size: 22pt;
+  font-family: "BulgMod";
+  font-size: 22pt;
 }
 
 #my-nav a {
-    color: #262228;
+  color: #262228;
 }
 
 #my-nav {
-    background-color: #FFFFFF;
-    color: #FFFFFF;
+  background-color: #ffffff;
+  color: #ffffff;
 }
 
 #logo {
-    height: 80px;
-    width: 80px;
+  height: 80px;
+  width: 80px;
 }
 
 #my-tabs {
-    font-family: "OpenSansL";
-    font-size: 13pt;
+  font-family: "OpenSansL";
+  font-size: 13pt;
 }
 
 body {
-    background: #F4F4F4;
+  background: #f4f4f4;
 }
 
 #maintext {
-    font-family: "LatoL";
-    color: #262228;
-    margin-top: 2%;
-    width: 80%;
+  font-family: "LatoL";
+  color: #262228;
+  margin-top: 2%;
+  width: 80%;
 }
 
 #about {
-    background: #FFFFFF;
-    border: 20px solid #FFFFFF;
-    font-size: 14pt;
+  background: #ffffff;
+  border: 20px solid #ffffff;
+  font-size: 14pt;
 }
 
 #rush {
-    background: #FFFFFF;
-    border: 20px solid #FFFFFF;
-    font-size: 16pt;
+  background: #ffffff;
+  border: 20px solid #ffffff;
+  font-size: 16pt;
 }
 
 #perf {
-    background: #FFFFFF;
-    border: 20px solid #FFFFFF;
-    font-size: 16pt;
+  background: #ffffff;
+  border: 20px solid #ffffff;
+  font-size: 16pt;
 }
 
 #perf-list {
-    font-size: 12pt;
+  font-size: 12pt;
 }
 
 #myCarousel {
-    display: block;
-    margin: auto;
-    height: 272px;
-    width: 275px;
-    overflow: hidden;
-    outside-border: 10px solid white;
+  display: block;
+  margin: auto;
+  height: 272px;
+  width: 275px;
+  overflow: hidden;
+  outside-border: 10px solid white;
 }
 
 #socials {
-    margin-left: 40%;
+  margin-left: 40%;
 }
 
 #social {
-    height: 50px;
-    width: 50px;
+  height: 50px;
+  width: 50px;
 }
 
 #conText {
-    margin-top: 5%;
+  margin-top: 5%;
 }
 
 #s-photo {
-    height: 150px;
-    width: 225px;
+  height: 150px;
+  width: 225px;
 }
 
 .footer {
-    background-color: #F4F4F4;
-    font-family: "OpenSansL";
-    color: #262228;
+  background-color: #f4f4f4;
+  font-family: "OpenSansL";
+  color: #262228;
 }
 
 .footer p {
-    margin-left: 2%;
+  margin-left: 2%;
 }
 
 .top-buffer {
-    margin-top: 20px;
+  margin-top: 20px;
+}
+
+/* MEMBERS PAGE STUFF */
+.members-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.section-header:after {
+  height: 5px;
+  display: block;
+  width: 150px;
+  background: #808080;
+  border-right: 1px white;
+  content: "";
+}
+
+.member-card {
+  flex: 0 1 auto;
+  padding: 20px 40px 20px 0;
+}
+
+.member-pic {
+  cursor: pointer;
+}
+
+.member-card-text {
+  text-align: center;
+}
+
+.modal-title {
+  display: inline;
 }
