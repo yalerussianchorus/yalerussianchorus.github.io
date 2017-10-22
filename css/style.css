@@ -17,10 +17,6 @@
   font-family: "DeliciousRoman";
   src: url("../fonts/delicious/Delicious-Roman.otf");
 }
-@font-face {
-  font-family: "ColabL";
-  src: url("../fonts/ColabLig.otf");
-}
 
 #topTitle {
   font-family: "BulgMod";
