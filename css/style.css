@@ -103,6 +103,12 @@ body {
   width: 225px;
 }
 
+/* FOR MUSIC PAGE */
+
+#musicbox {
+  width: 80%;
+}
+
 .footer {
   background-color: #f4f4f4;
   font-family: "OpenSansL";
@@ -185,4 +191,19 @@ body {
 .alum-pic {
   /* cursor: pointer; */
   width: 300px;
+}
+
+/* MUSIC PAGE STUFF */
+
+.music-item {
+  background-color: #262228;
+}
+
+.music-text {
+  font-family: "DeliciousRoman";
+}
+
+.list-group-item {
+  border-radius: 0 !important;
+  border: 2px solid #ffffff;
 }
