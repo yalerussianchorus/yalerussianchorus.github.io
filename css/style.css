@@ -197,6 +197,7 @@ body {
 
 .music-item {
   background-color: #262228;
+  width: 100%;
 }
 
 .music-text {
@@ -206,4 +207,18 @@ body {
 .list-group-item {
   border-radius: 0 !important;
   border: 2px solid #ffffff;
+}
+
+.music-vid {
+  width: 448px;
+  height: 252px;
+  align: center;
+}
+
+.below-vid {
+  margin-top: 20px;
+  background: #ffffff;
+  border: 10px solid #ffffff;
+  font-size: 14pt;
+  font-family: "LatoL";
 }
