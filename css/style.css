@@ -14,6 +14,10 @@
   src: url("../fonts/Lato-Light.ttf");
 }
 @font-face {
+  font-family: "LatoBI";
+  src: url("../fonts/Lato-BoldItalic.ttf");
+}
+@font-face {
   font-family: "DeliciousRoman";
   src: url("../fonts/delicious/Delicious-Roman.otf");
 }
@@ -98,9 +102,8 @@ body {
   margin-top: 5%;
 }
 
-#s-photo {
-  height: 150px;
-  width: 225px;
+#boldQuote {
+  font-family: "LatoBI";
 }
 
 .footer {
