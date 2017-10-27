@@ -106,6 +106,12 @@ body {
   font-family: "LatoBI";
 }
 
+#kremPoster {
+  width: 280px;
+  height: "auto";
+  margin-right: 10%;
+}
+
 .footer {
   background-color: #f4f4f4;
   font-family: "OpenSansL";
