@@ -212,11 +212,20 @@ body {
 .music-vid {
   width: 448px;
   height: 252px;
-  align: center;
+  display: block;
+  margin: auto;
 }
 
 .below-vid {
   margin-top: 20px;
+  background: #ffffff;
+  border: 10px solid #ffffff;
+  font-size: 14pt;
+  font-family: "LatoL";
+}
+
+.above-music {
+  margin-bottom: 20px;
   background: #ffffff;
   border: 10px solid #ffffff;
   font-size: 14pt;
