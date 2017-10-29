@@ -195,3 +195,44 @@ body {
   /* cursor: pointer; */
   width: 300px;
 }
+
+/* MUSIC PAGE STUFF */
+
+.music-item {
+  background-color: #262228;
+  width: 100%;
+}
+
+.music-text {
+  font-family: "DeliciousRoman";
+}
+
+.list-group-item {
+  border-radius: 0 !important;
+  border: 2px solid #ffffff;
+}
+
+.music-vid {
+  width: 448px;
+  height: 252px;
+  display: block;
+  margin: auto;
+}
+
+.below-vid {
+  margin-top: 20px;
+  background: #ffffff;
+  border: 10px solid #ffffff;
+  font-size: 14pt;
+  font-family: "LatoL";
+}
+
+.above-music {
+  margin-bottom: 20px;
+  background: #ffffff;
+  border: 10px solid #ffffff;
+  font-size: 14pt;
+  font-family: "LatoL";
+  }
+
+  
