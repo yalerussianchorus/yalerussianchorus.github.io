@@ -112,6 +112,10 @@ body {
   margin-right: 10%;
 }
 
+#musicbox {
+  width: 80%;
+}
+
 .footer {
   background-color: #f4f4f4;
   font-family: "OpenSansL";
