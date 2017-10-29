@@ -239,4 +239,6 @@ body {
   font-family: "LatoL";
   }
 
-  
+audio::-internal-media-controls-download-button {
+    display:none;
+}
