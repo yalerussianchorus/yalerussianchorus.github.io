@@ -207,6 +207,10 @@ body {
   width: 100%;
 }
 
+audio::-internal-media-controls-download-button {
+    display:none;
+}
+
 .music-text {
   font-family: "DeliciousRoman";
 }
@@ -238,7 +242,3 @@ body {
   font-size: 14pt;
   font-family: "LatoL";
   }
-
-audio::-internal-media-controls-download-button {
-    display:none;
-}
