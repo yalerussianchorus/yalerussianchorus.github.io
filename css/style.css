@@ -200,6 +200,11 @@ body {
   width: 300px;
 }
 
+.small-text {
+  font-size: 7pt;
+  font-family: "LatoL";
+}
+
 /* MUSIC PAGE STUFF */
 
 .music-item {
