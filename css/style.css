@@ -281,3 +281,13 @@ audio::-internal-media-controls-download-button {
   font-size: 14pt;
   font-family: "LatoL";
   }
+
+/* CONTACT PAGE STUFF */
+
+.contact-text {
+  font-family: "LatoL";
+  color: #262228;
+  margin-top: 2%;
+  width: 60%;
+}
+
