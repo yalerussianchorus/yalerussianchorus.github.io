@@ -284,10 +284,10 @@ audio::-internal-media-controls-download-button {
 
 /* CONTACT PAGE STUFF */
 
-.contact-text {
+#contact-text {
   font-family: "LatoL";
   color: #262228;
-  margin-top: 2%;
+  margin-top: 5%;
   width: 60%;
 }
 
