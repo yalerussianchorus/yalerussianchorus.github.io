@@ -18,9 +18,22 @@
   src: url("../fonts/Lato-BoldItalic.ttf");
 }
 @font-face {
+  font-family: "LatoM";
+  src: url("../fonts/Lato-Medium.ttf");
+}
+@font-face {
   font-family: "DeliciousRoman";
   src: url("../fonts/delicious/Delicious-Roman.otf");
 }
+@font-face {
+  font-family: "DeliciousBold";
+  src: url("../fonts/delicious/Delicious-Bold.otf");;
+}
+@font-face {
+  font-family: "MuseoSans";
+  src: url("../fonts/Museo-Sans.ttf");
+}
+
 
 #topTitle {
   font-family: "BulgMod";
@@ -181,8 +194,13 @@ body {
   font-size: 16pt;
 }
 
-.member-pic {
+.director-pic {
   /* cursor: pointer; */
+  width: 200px;
+}
+
+.member-pic {
+  cursor: pointer;
   width: 200px;
 }
 
@@ -192,11 +210,27 @@ body {
 }
 
 .modal-title {
+  font-family: "LatoL";
+  font-size: 18pt;
   display: inline;
 }
 
+.modal-body {
+  font-family: "LatoL";
+  font-size: 15pt;
+}
+
+.modal-dialog {
+  top: 10%;
+  width: 50%;
+}
+
+.emph {
+  font-size: 16pt;
+  font-family: "DeliciousBold";
+}
+
 .alum-pic {
-  /* cursor: pointer; */
   width: 300px;
 }
 
