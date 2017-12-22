@@ -69,6 +69,7 @@ body {
   color: #262228;
   margin-top: 2%;
   width: 80%;
+  margin-bottom: 8%;
 }
 
 #about {
@@ -130,13 +131,12 @@ body {
 }
 
 .footer {
-  background-color: #f4f4f4;
+  background-color: #ffffff;
   font-family: "OpenSansL";
   color: #262228;
-}
-
-.footer p {
-  margin-left: 2%;
+  border-top-style: solid;
+  border-top-color: #E7E7E7;
+  border-top-width: 1px;
 }
 
 .top-buffer {
