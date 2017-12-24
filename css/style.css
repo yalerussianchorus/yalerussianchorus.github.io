@@ -33,7 +33,61 @@
   font-family: "MuseoSans";
   src: url("../fonts/Museo-Sans.ttf");
 }
+@font-face {
+  font-family: "MontserratM";
+  src: url("../fonts/montserrat/Montserrat-Medium.otf");
+}
 
+#performances {
+  background-color: #ffffff;
+  font-family: "LatoL";
+  font-size: 22pt;
+}
+
+.concert {
+  background: #ffffff;
+  height: 175px;
+  border-top: 20px solid #f4f4f4;
+  padding-top: 20px;
+  color: #262228;
+}
+
+.concert:hover {
+  background: #74A9FF;
+}
+
+.concert-date {
+  font-size: 20pt;
+}
+
+.concert-venue {
+  font-family: "LatoM";
+  font-size: 16pt;
+  cursor: pointer;
+  color: #262228;
+}
+
+.concert-venue:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.concert-place {
+  font-size: 16pt;
+}
+
+.left-concert {
+  border-right: 20px solid #f4f4f4;
+}
+
+.middle-concert {
+  border-right: 10px solid #f4f4f4;
+  border-left: 10px solid #f4f4f4;
+}
+
+.right-concert {
+  border-left: 20px solid #f4f4f4;
+}
 
 #topTitle {
   font-family: "BulgMod";
@@ -61,10 +115,10 @@
 }
 
 body {
-  background: #f4f4f4;
+  background: #f0f0f0;
 }
 
-#maintext {
+#index-main {
   font-family: "LatoL";
   color: #262228;
   margin-top: 2%;
@@ -74,7 +128,11 @@ body {
 
 #about {
   background: #ffffff;
+  height: 272px;
   border: 20px solid #ffffff;
+}
+
+#about p {
   font-size: 14pt;
 }
 
