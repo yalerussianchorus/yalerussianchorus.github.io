@@ -33,27 +33,60 @@
   font-family: "MuseoSans";
   src: url("../fonts/Museo-Sans.ttf");
 }
-@font-face {
-  font-family: "MontserratM";
-  src: url("../fonts/montserrat/Montserrat-Medium.otf");
+
+:root {
+  --dark-text: #262228;
+  --main-bg-color: #f2f2f2;
+  --box-blue: #74A9FF;
 }
 
+/* ALL PAGES */
+
+#topTitle {
+  font-family: "BulgMod";
+  font-size: 22pt;
+}
+
+.my-nav {
+  background-color: white;
+}
+
+.my-nav a {
+  color: var(--dark-text) !important;
+}
+
+.logo {
+  height: 80px;
+  width: 80px;
+}
+
+.my-tabs {
+  font-family: "OpenSansL";
+  font-size: 13pt;
+}
+
+body {
+  background: var(--main-bg-color);
+}
+
+/* HOME PAGE */
+
 #performances {
-  background-color: #ffffff;
+  background-color: white;
   font-family: "LatoL";
   font-size: 22pt;
 }
 
-.concert {
-  background: #ffffff;
+.concert-box {
+  background: white;
   height: 175px;
-  border-top: 20px solid #f4f4f4;
+  border-top: 20px solid var(--main-bg-color);
   padding-top: 20px;
-  color: #262228;
+  color: var(--dark-text);
 }
 
-.concert:hover {
-  background: #74A9FF;
+.concert-box:hover {
+  background: var(--box-blue);
 }
 
 .concert-date {
@@ -64,11 +97,11 @@
   font-family: "LatoM";
   font-size: 16pt;
   cursor: pointer;
-  color: #262228;
+  color: var(--dark-text);
 }
 
 .concert-venue:hover {
-  color: #ffffff;
+  color: white;
   text-decoration: none;
 }
 
@@ -77,59 +110,31 @@
 }
 
 .left-concert {
-  border-right: 20px solid #f4f4f4;
+  border-right: 20px solid var(--main-bg-color);
 }
 
 .middle-concert {
-  border-right: 10px solid #f4f4f4;
-  border-left: 10px solid #f4f4f4;
+  border-right: 10px solid var(--main-bg-color);
+  border-left: 10px solid var(--main-bg-color);
 }
 
 .right-concert {
-  border-left: 20px solid #f4f4f4;
+  border-left: 20px solid var(--main-bg-color);
 }
 
-#topTitle {
-  font-family: "BulgMod";
-  font-size: 22pt;
-}
-
-#my-nav a {
-  color: #262228;
-}
-
-#my-nav {
-  background-color: #ffffff;
-  color: #ffffff;
-}
-
-#logo {
-  height: 80px;
-  width: 80px;
-  /* border: 2px solid #AB8C6F; */
-}
-
-#my-tabs {
-  font-family: "OpenSansL";
-  font-size: 13pt;
-}
-
-body {
-  background: #f0f0f0;
-}
 
 #index-main {
   font-family: "LatoL";
-  color: #262228;
+  color: var(--dark-text);
   margin-top: 2%;
   width: 80%;
   margin-bottom: 8%;
 }
 
 #about {
-  background: #ffffff;
+  background: white;
   height: 272px;
-  border: 20px solid #ffffff;
+  border: 20px solid white;
 }
 
 #about p {
@@ -137,14 +142,14 @@ body {
 }
 
 #rush {
-  background: #ffffff;
-  border: 20px solid #ffffff;
+  background: white;
+  border: 20px solid white;
   font-size: 16pt;
 }
 
 #perf {
-  background: #ffffff;
-  border: 20px solid #ffffff;
+  background: white;
+  border: 20px solid white;
   font-size: 16pt;
 }
 
@@ -189,7 +194,7 @@ body {
 }
 
 .footer {
-  background-color: #ffffff;
+  background-color: white;
   font-family: "OpenSansL";
   color: #262228;
   border-top-style: solid;
@@ -201,7 +206,8 @@ body {
   margin-top: 20px;
 }
 
-/* MEMBERS PAGE STUFF */
+/* MEMBERS PAGE */
+
 .members-container {
   display: flex;
   flex-flow: row wrap;
@@ -297,7 +303,7 @@ body {
   font-family: "LatoL";
 }
 
-/* MUSIC PAGE STUFF */
+/* MUSIC PAGE */
 
 .music-item {
   background-color: #262228;
@@ -314,7 +320,7 @@ audio::-internal-media-controls-download-button {
 
 .list-group-item {
   border-radius: 0 !important;
-  border: 2px solid #ffffff;
+  border: 2px solid white;
 }
 
 .music-vid {
@@ -326,21 +332,21 @@ audio::-internal-media-controls-download-button {
 
 .below-vid {
   margin-top: 20px;
-  background: #ffffff;
-  border: 10px solid #ffffff;
+  background: white;
+  border: 10px solid white;
   font-size: 14pt;
   font-family: "LatoL";
 }
 
 .above-music {
   margin-bottom: 20px;
-  background: #ffffff;
-  border: 10px solid #ffffff;
+  background: white;
+  border: 10px solid white;
   font-size: 14pt;
   font-family: "LatoL";
   }
 
-/* CONTACT PAGE STUFF */
+/* CONTACT PAGE */
 
 #contact-text {
   font-family: "LatoL";

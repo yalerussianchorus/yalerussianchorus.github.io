@@ -17,7 +17,7 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-default" id="my-nav">
+    <nav class="navbar navbar-default my-nav">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-links" aria-expanded="false">
@@ -28,14 +28,14 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="index.html">
-                    <img id="logo" src="photos/logoblue.jpg" class="img-circle">
+                    <img class="logo img-circle" src="photos/logoblue.jpg">
                 </a>
             </div> <!-- end of nav header -->
             <div class="collapse navbar-collapse" id="nav-links">
                 <ul class="nav navbar-nav navbar-text nav-pills" id="topTitle">
                     <li><a href="index.html">The Yale Russian Chorus<span class="sr-only">(current)</span></a></li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right navbar-text" id="my-tabs">
+                <ul class="nav navbar-nav navbar-right navbar-text my-tabs">
                     <li><a href="#">Home</a></li>
                     <li><a href="history.html">History</a></li>
                     <li><a href="music.html">Music</a></li>
@@ -52,7 +52,7 @@
                 <p>
                     You've reached the home of the Yale Russian Chorus, North America's oldest Slavic choir.
                     <br><br>
-                    From Azerbaijan to the White House, from the Russian Steppes to Carnegie Hall -- and now on the internet! -- the Yale Russian Chorus has delighted audiences across the world for 64 years.
+                    From Azerbaijan to the White House, from the Russian Steppes to Carnegie Hall -- and now on the internet! -- the Yale Russian Chorus has delighted audiences across the world for <span id="years"></span> years.
                     <br><br>
                     Contact us at: <b>yalerussianchorus@gmail.com</b>
                 </p>
@@ -111,7 +111,7 @@
             Winter Tour Performances
         </div>
         <div class="row text-center">
-            <div class="col-md-4 concert">
+            <div class="col-md-4 concert-box left-concert">
                 <div class="concert-date">
                     Jan 4
                 </div>
@@ -122,7 +122,7 @@
                     Eastman School of Music
                 </a>
             </div>
-            <div class="col-md-4 concert middle-concert">
+            <div class="col-md-4 concert-box middle-concert">
                 <div class="concert-date">
                     Jan 5
                 </div>
@@ -130,23 +130,23 @@
                     Rochester, NY
                 </div>
                 <a href="https://www.facebook.com/events/1955973521318795/" target="_blank" class="concert-venue">
-                    Calvary St. Andrew's
+                    Calvary St. Andrew's Church
                 </a>
             </div>
-            <div class="col-md-4 concert">
+            <div class="col-md-4 concert-box right-concert">
                 <div class="concert-date">
                     Jan 8
                 </div>
                 <div class="concert-place">
                     Buffalo, NY
                 </div>
-                <a href="https://www.facebook.com/events/1955695651345944/" target="_blank" class="concert-venue">
-                    Saints Peter & Paul
+                <a href="https://www.facebook.com/events/1582428755157013/1626776304055591/" target="_blank" class="concert-venue">
+                    Sts. Peter & Paul Orthodox Church
                 </a>
             </div>
         </div>
         <div class="row text-center">
-            <div class="col-md-4 concert">
+            <div class="col-md-4 concert-box left-concert">
                 <div class="concert-date">
                     Jan 9
                 </div>
@@ -154,10 +154,10 @@
                     Toronto
                 </div>
                 <a href="https://www.facebook.com/events/152075825566938/" target="_blank" class="concert-venue">
-                    St. Thomas's Church
+                    St. Thomas's Anglican Church
                 </a>
             </div>
-            <div class="col-md-4 concert middle-concert">
+            <div class="col-md-4 concert-box middle-concert">
                 <div class="concert-date">
                     Jan 11
                 </div>
@@ -165,10 +165,10 @@
                     Woodstock, VT
                 </div>
                 <a href="https://www.facebook.com/events/812805442225837/" target="_blank" class="concert-venue">
-                    Church of Woodstock
+                    First Congregational Church
                 </a>
             </div>
-            <div class="col-md-4 concert">
+            <div class="col-md-4 concert-box right-concert">
                 <div class="concert-date">
                     Jan 12
                 </div>
@@ -176,7 +176,7 @@
                     Rutland, VT
                 </div>
                 <a href="https://www.facebook.com/events/598225027176004/" target="_blank" class="concert-venue">
-                    Church of Rutland
+                    Unitarian Universalist Church
                 </a>
             </div>
         </div>
@@ -203,5 +203,14 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const now = new Date();
+        const year = now.getFullYear();
+        const result = year - 1953;
+        document.getElementById("years").innerHTML = result;
+        console.log(result);
+    </script>
+
 </body>
 </html>
