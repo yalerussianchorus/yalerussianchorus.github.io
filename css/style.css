@@ -42,7 +42,21 @@
 
 /* ALL PAGES */
 
-#topTitle {
+.main-text {
+  font-family: "LatoL";
+  color: var(--dark-text);
+  margin-top: 2%;
+  width: 80%;
+  margin-bottom: 8%;
+}
+
+.top-buffer {
+  margin-top: 20px;
+}
+
+    /* NAVBAR */
+
+.top-title {
   font-family: "BulgMod";
   font-size: 22pt;
 }
@@ -65,16 +79,64 @@
   font-size: 13pt;
 }
 
+    /* BODY */
+
 body {
   background: var(--main-bg-color);
 }
 
+    /* FOOTER */
+
+.footer {
+  background-color: white;
+  font-family: "OpenSansL";
+  color: #262228;
+  border-top-style: solid;
+  border-top-color: #E7E7E7;
+  border-top-width: 1px;
+}
+
+#socials {
+  margin-left: 40%;
+}
+
+#social {
+  height: 50px;
+  width: 50px;
+}
+
 /* HOME PAGE */
+
+#about {
+  background: white;
+  height: 272px;
+  border: 20px solid white;
+}
+
+#about p {
+  font-size: 14pt;
+}
+
+#discCarousel {
+  display: block;
+  margin: auto;
+  height: 272px;
+  width: 275px;
+  overflow: hidden;
+  outside-border: 10px solid white;
+}
+
+    /* TOUR */
 
 #performances {
   background-color: white;
   font-family: "LatoL";
   font-size: 22pt;
+}
+
+#noFacebook {
+  font-family: "DeliciousBold";
+  font-size: 18pt;
 }
 
 .concert-box {
@@ -122,64 +184,9 @@ body {
   border-left: 20px solid var(--main-bg-color);
 }
 
+/* HISTORY */
 
-#index-main {
-  font-family: "LatoL";
-  color: var(--dark-text);
-  margin-top: 2%;
-  width: 80%;
-  margin-bottom: 8%;
-}
-
-#about {
-  background: white;
-  height: 272px;
-  border: 20px solid white;
-}
-
-#about p {
-  font-size: 14pt;
-}
-
-#rush {
-  background: white;
-  border: 20px solid white;
-  font-size: 16pt;
-}
-
-#perf {
-  background: white;
-  border: 20px solid white;
-  font-size: 16pt;
-}
-
-#perf-list {
-  font-size: 12pt;
-}
-
-#myCarousel {
-  display: block;
-  margin: auto;
-  height: 272px;
-  width: 275px;
-  overflow: hidden;
-  outside-border: 10px solid white;
-}
-
-#socials {
-  margin-left: 40%;
-}
-
-#social {
-  height: 50px;
-  width: 50px;
-}
-
-#conText {
-  margin-top: 5%;
-}
-
-#boldQuote {
+.bold-quote {
   font-family: "LatoBI";
 }
 
@@ -189,21 +196,51 @@ body {
   margin-right: 10%;
 }
 
+/* MUSIC PAGE */
+
+.music-item {
+  background-color: #262228;
+  width: 100%;
+}
+
+audio::-internal-media-controls-download-button {
+    display:none;
+}
+
+.music-text {
+  font-family: "DeliciousRoman";
+}
+
+.list-group-item {
+  border-radius: 0 !important;
+  border: 2px solid white;
+}
+
+.music-vid {
+  width: 448px;
+  height: 252px;
+  display: block;
+  margin: auto;
+}
+
+.below-vid {
+  margin-top: 20px;
+  background: white;
+  border: 10px solid white;
+  font-size: 14pt;
+  font-family: "LatoL";
+}
+
+.above-music {
+  margin-bottom: 20px;
+  background: white;
+  border: 10px solid white;
+  font-size: 14pt;
+  font-family: "LatoL";
+  }
+
 #musicbox {
   width: 80%;
-}
-
-.footer {
-  background-color: white;
-  font-family: "OpenSansL";
-  color: #262228;
-  border-top-style: solid;
-  border-top-color: #E7E7E7;
-  border-top-width: 1px;
-}
-
-.top-buffer {
-  margin-top: 20px;
 }
 
 /* MEMBERS PAGE */
@@ -294,7 +331,7 @@ body {
   font-family: "DeliciousBold";
 }
 
-.alum-pic {
+#alumPic {
   width: 300px;
 }
 
@@ -302,49 +339,6 @@ body {
   font-size: 7pt;
   font-family: "LatoL";
 }
-
-/* MUSIC PAGE */
-
-.music-item {
-  background-color: #262228;
-  width: 100%;
-}
-
-audio::-internal-media-controls-download-button {
-    display:none;
-}
-
-.music-text {
-  font-family: "DeliciousRoman";
-}
-
-.list-group-item {
-  border-radius: 0 !important;
-  border: 2px solid white;
-}
-
-.music-vid {
-  width: 448px;
-  height: 252px;
-  display: block;
-  margin: auto;
-}
-
-.below-vid {
-  margin-top: 20px;
-  background: white;
-  border: 10px solid white;
-  font-size: 14pt;
-  font-family: "LatoL";
-}
-
-.above-music {
-  margin-bottom: 20px;
-  background: white;
-  border: 10px solid white;
-  font-size: 14pt;
-  font-family: "LatoL";
-  }
 
 /* CONTACT PAGE */
 
