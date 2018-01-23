@@ -125,6 +125,11 @@ body {
   font-size: 14pt;
 }
 
+#homeEmail {
+  font-family: "DeliciousRoman";
+  font-size: 16pt;
+}
+
 #discCarousel {
   display: block;
   margin: auto;
@@ -134,13 +139,47 @@ body {
   outside-border: 10px solid white;
 }
 
-    /* TOUR */
+    /* UPCOMING PERFORMANCES */
 
 #performances {
   background-color: white;
+  color: #AB8C6F;
   font-family: "LatoL";
   font-size: 22pt;
+  padding-left: 35px;
+  border-top: 10px solid white;
+  border-bottom: 20px solid white;
 }
+
+#springMaslenitsa {
+  background: white;
+  padding-right: 35px;
+  padding-left: 35px;
+}
+
+#sMTitle {
+  font-family: "DeliciousBold";
+  font-size: 22pt;
+}
+
+#sMDate {
+  font-family: "OpenSansL";
+  font-size: 12pt;
+}
+
+#sMDescription {
+  font-size: 14pt;
+}
+
+#sMLinks {
+  font-family: "DeliciousRoman";
+  font-size: 16pt;
+}
+
+#sMLinks a {
+  color: #AB8C6F !important;
+}
+
 
 #noFacebook {
   font-family: "DeliciousBold";
