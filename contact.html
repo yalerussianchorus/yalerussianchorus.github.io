@@ -37,31 +37,36 @@
                 </div>
                 <ul class="nav navbar-nav navbar-right navbar-text my-tabs">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="history.html">History</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+                        <ul class="dropdown-menu drops">
+                            <li><a href="history.html">History</a></li>
+                            <li><a href="members.html">Members</a></li>
+                        </ul>
+                    </li>
                     <li><a href="music.html">Music</a></li>
-                    <li><a href="members.html">Members</a></li>
                     <!-- <li><a href="news.html">News</a></li> -->
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container text-center" id="contact-text">
-    	<h2>
-            Please contact us at: 
-    		<br>yalerussianchorus@gmail.com
-        </h2>
-        <br>
-        <h3>
-            Your donations will help us continue to make music and share it with others. We thank you for your support!
+    <div class="container" id="contact-text">
+        <div class="row">
+            <p>
+                Please contact us at: <span id="contactEmail">yalerussianchorus@gmail.com</span>
+            </p>
+        </div>
+        <div class="row top-buffer">
+            <p>Your donations will help us continue to make music and share it with others.<br>We thank you for your support!</p>
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                 <input type="hidden" name="cmd" value="_s-xclick">
                 <input type="hidden" name="hosted_button_id" value="95GXG9CQRNNZ6">
-                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <button class="donate-button">Donate</button>
                 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
             </form>
-        </h3>
+        </div>
     </div>
 
     <footer class="footer">
@@ -70,16 +75,16 @@
             <div class="pull-right">
                 <ul class="list-inline">
                     <li><a href="https://www.facebook.com/yalerussianchorus">
-                        <img id="social" src="photos/fb_circle.png">
-                    </a></li>
-                    <li><a href="https://twitter.com/yrc1953">
-                        <img id="social" src="photos/tt_circle.png">
+                        <img class="social" src="http://res.cloudinary.com/yale-russian-chorus/image/upload/c_scale,w_40/v1518243945/Social/facebook.png">
                     </a></li>
                     <li><a href="https://www.instagram.com/yalerussianchorus/">
-                        <img id="social" src="photos/in_circle.png">
+                        <img class="social" src="http://res.cloudinary.com/yale-russian-chorus/image/upload/c_scale,w_40/v1518243945/Social/insta.png">
                     </a></li>
                     <li><a href="https://www.youtube.com/channel/UCwJ-7XOCjrIRClto650iSDg/videos">
-                        <img id="social" src="photos/yt_circle.png">
+                        <img class="social" src="http://res.cloudinary.com/yale-russian-chorus/image/upload/c_scale,w_40/v1518243945/Social/youtube.png">
+                    </a></li>
+                    <li><a href="https://twitter.com/yrc1953">
+                        <img class="social" src="http://res.cloudinary.com/yale-russian-chorus/image/upload/c_scale,w_40/v1518243945/Social/twitter.png">
                     </a></li>
                 </ul>
             </div>

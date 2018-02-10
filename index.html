@@ -36,10 +36,15 @@
                     <li><a href="index.html">The Yale Russian Chorus<span class="sr-only">(current)</span></a></li>
                 </div>
                 <ul class="nav navbar-nav navbar-right navbar-text my-tabs">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="history.html">History</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+                        <ul class="dropdown-menu drops">
+                            <li><a href="history.html">History</a></li>
+                            <li><a href="members.html">Members</a></li>
+                        </ul>
+                    </li>
                     <li><a href="music.html">Music</a></li>
-                    <li><a href="members.html">Members</a></li>
                     <!-- <li><a href="news.html">News</a></li> -->
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -59,7 +64,7 @@
                 </p>
             </div>
             <div class="col-md-4">
-                <div id="discCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000">
+                <div id="discCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="4500">
                     <!-- Indicators -->
                     <ol class="carousel-indicators">
                         <li data-target="#discCarousel" data-slide-to="0" class="active"></li>
@@ -111,36 +116,46 @@
         <div class="row top-buffer" id="performances">
             Upcoming Performances
         </div>
-        <div class="row" id="springMaslenitsa">
+        <div class="row perf">
             <p>
-                <span id="sMTitle">Spring Maslenitsa Concert </span><span id="sMDate">Friday, February 16 at 1157 Lexington Ave, New York City</span>
+                <span class="perf-title">Spring Maslenitsa Concert </span><span class="perf-time">Friday, February 16 at 1157 Lexington Ave, New York City</span>
             </p>
-            <p id="sMDescription">
+            <p class="perf-desc">
                 Come celebrate the last Friday before Orthodox Lent with the Yale Russian Chorus! In Russia, villagers will be lighting straw men on fire for "Maslenitsa," but here in New York City our chorus will light your heart on fire with music of the slavic world. Proceeds will go towards the Prince Vladimir Youth Association. 
             </p>
-            <p id="sMLinks">
+            <p class="perf-links">
                 <a href="http://events.eventzilla.net/e/spring-maslenitsa-concert-2138944222" target="_blank">Tickets</a> | <a href="https://www.facebook.com/events/146423346020975/" target="_blank">Facebook</a>
             </p>
-
+        </div>
+        <div class="row perf">
+            <p>
+                <span class="perf-title">Russian Winter Festival </span><span class="perf-time">Sunday, February 25 at the New Russia Center in Rensselaer, New York</span>
+            </p>
+            <p class="perf-desc">
+                Our chorus is excited to participate the New Russia Cultural Center's Russia Winter Festival Finale! The event, which runs from Saturday, February 24 to Sunday, February 25, will be headlined by the Russian folk trio "Moscow Nights."
+            </p>
+            <p class="perf-links">
+                <a href="https://www.newrussiacenter.org" target="_blank">New Russia Center</a> | <a href="https://www.albany.com/event/russian-winter-festival-163038/" target="_blank">Event Info</a>
+            </p>
         </div>
     </div>
 
     <footer class="footer">
         <div class="container-fluid">
-            <p class="pull-left">The Yale Russian Chorus est. 1953 </p>
+            <p class="pull-left foot-text">The Yale Russian Chorus est. 1953 </p>
             <div class="pull-right">
                 <ul class="list-inline">
                     <li><a href="https://www.facebook.com/yalerussianchorus">
-                        <img id="social" src="photos/fb_circle.png">
-                    </a></li>
-                    <li><a href="https://twitter.com/yrc1953">
-                        <img id="social" src="photos/tt_circle.png">
+                        <img class="social" src="http://res.cloudinary.com/yale-russian-chorus/image/upload/c_scale,w_40/v1518243945/Social/facebook.png">
                     </a></li>
                     <li><a href="https://www.instagram.com/yalerussianchorus/">
-                        <img id="social" src="photos/in_circle.png">
+                        <img class="social" src="http://res.cloudinary.com/yale-russian-chorus/image/upload/c_scale,w_40/v1518243945/Social/insta.png">
                     </a></li>
                     <li><a href="https://www.youtube.com/channel/UCwJ-7XOCjrIRClto650iSDg/videos">
-                        <img id="social" src="photos/yt_circle.png">
+                        <img class="social" src="http://res.cloudinary.com/yale-russian-chorus/image/upload/c_scale,w_40/v1518243945/Social/youtube.png">
+                    </a></li>
+                    <li><a href="https://twitter.com/yrc1953">
+                        <img class="social" src="http://res.cloudinary.com/yale-russian-chorus/image/upload/c_scale,w_40/v1518243945/Social/twitter.png">
                     </a></li>
                 </ul>
             </div>
