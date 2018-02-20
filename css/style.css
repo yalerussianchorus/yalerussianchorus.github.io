@@ -55,6 +55,10 @@
   margin-top: 20px;
 }
 
+.contactEmail {
+  color: var(--my-gold);
+}
+
     /* NAVBAR */
 
 @media (min-width: 768px) {
@@ -421,10 +425,6 @@ audio::-internal-media-controls-download-button {
   color: #262228;
   margin-top: 5%;
   width: 60%;
-}
-
-#contactEmail {
-  color: var(--my-gold);
 }
 
 .donate-button {
