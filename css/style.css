@@ -1,5 +1,7 @@
 @import "sticky_footer.css";
 @import "carousel_fade.css";
+@import "owl.carousel.css";
+@import "owl.theme.default.css";
 
 @font-face {
   font-family: "BulgMod";
@@ -55,8 +57,12 @@
   margin-top: 20px;
 }
 
-.contactEmail {
+.gold-text {
   color: var(--my-gold);
+}
+
+.gold-links a {
+  color: #AB8C6F !important;
 }
 
     /* NAVBAR */
@@ -133,7 +139,7 @@ body {
   font-family: "LatoL";
   color: var(--dark-text);
   margin-top: 3%;
-  width: 75%;
+  width: 70%;
   margin-bottom: 8%;
 }
 
@@ -166,7 +172,7 @@ body {
 #performances {
   background-color: white;
   color: var(--my-gold);
-  font-family: "LatoL";
+  font-family: "LatoM";
   font-size: 22pt;
   padding-left: 35px;
   border-top: 10px solid white;
@@ -180,7 +186,7 @@ body {
 }
 
 .perf-title {
-  font-family: "DeliciousBold";
+  font-family: "DeliciousRoman";
   font-size: 22pt;
 }
 
@@ -200,57 +206,6 @@ body {
 
 .perf-links a {
   color: #AB8C6F !important;
-}
-
-
-#noFacebook {
-  font-family: "DeliciousBold";
-  font-size: 18pt;
-}
-
-.concert-box {
-  background: white;
-  height: 175px;
-  border-top: 20px solid var(--main-bg-color);
-  padding-top: 20px;
-  color: var(--dark-text);
-}
-
-.concert-box:hover {
-  background: var(--box-blue);
-}
-
-.concert-date {
-  font-size: 20pt;
-}
-
-.concert-venue {
-  font-family: "LatoM";
-  font-size: 16pt;
-  cursor: pointer;
-  color: var(--dark-text);
-}
-
-.concert-venue:hover {
-  color: white;
-  text-decoration: none;
-}
-
-.concert-place {
-  font-size: 16pt;
-}
-
-.left-concert {
-  border-right: 20px solid var(--main-bg-color);
-}
-
-.middle-concert {
-  border-right: 10px solid var(--main-bg-color);
-  border-left: 10px solid var(--main-bg-color);
-}
-
-.right-concert {
-  border-left: 20px solid var(--main-bg-color);
 }
 
 /* HISTORY */
@@ -327,16 +282,6 @@ audio::-internal-media-controls-download-button {
   flex-flow: row wrap;
   justify-content: flex-start;
 }
-
-.section-header:after {
-  height: 3px;
-  display: block;
-  width: 150px;
-  background: #AB8C6F;
-  border-right: 1px white;
-  content: "";
-}
-
 .member-card {
   flex: 0 1 auto;
   padding: 20px 40px 20px 0;
@@ -345,6 +290,15 @@ audio::-internal-media-controls-download-button {
 .section-header {
   font-family: "DeliciousRoman";
   color: #262228;
+}
+
+.section-header:after {
+  height: 3px;
+  display: block;
+  width: 150px;
+  background: #AB8C6F;
+  border-right: 1px white;
+  content: "";
 }
 
 .director-header {
@@ -415,6 +369,36 @@ audio::-internal-media-controls-download-button {
 .small-text {
   font-size: 7pt;
   font-family: "LatoL";
+}
+
+/* TOURS PAGE */
+
+.tour-header {
+  font-family: "DeliciousRoman";
+  color: #262228;
+}
+
+.tour-header:after {
+  height: 3px;
+  display: block;
+  width: 700px;
+  background: #AB8C6F;
+  border-right: 1px white;
+  content: "";
+}
+
+.tour-place {
+  font-family: "OpenSansL";
+  font-size: 15pt;
+}
+
+.carousel-row {
+  height: 400px;
+}
+
+/* try to get this to work */
+.tour-carousel {
+  height: 350px !important;
 }
 
 /* CONTACT PAGE */

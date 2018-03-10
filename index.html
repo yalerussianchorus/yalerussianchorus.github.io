@@ -18,7 +18,7 @@
 <body>
 
     <nav class="navbar navbar-default my-nav">
-        <div class="container-fluid">
+        <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-links" aria-expanded="false">
                     <span class="glyphicon glyphicon-menu-hamburger sr-only"></span>
@@ -46,6 +46,7 @@
                     </li>
                     <li><a href="music.html">Music</a></li>
                     <!-- <li><a href="news.html">News</a></li> -->
+                    <li><a href="tours.html">Tours</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -60,7 +61,7 @@
                     <br><br>
                     From Azerbaijan to the White House, from the Russian Steppes to Carnegie Hall -- and now on the internet! -- the Yale Russian Chorus has delighted audiences across the world for <span id="years"></span> years.
                     <br><br>
-                    Contact us at: <span id="homeEmail">yalerussianchorus@gmail.com</span>
+                    Contact us at: <span id="homeEmail" class="gold-text">yalerussianchorus@gmail.com</span>
                 </p>
             </div>
             <div class="col-md-4">
@@ -113,35 +114,35 @@
             </div> <!-- column -->
         </div> <!-- row -->
 
-        <div class="row top-buffer" id="performances">
-            Upcoming Performances
+        <div class="row top-buffer gold-links" id="performances">
+            Spring Tour 2018
         </div>
         <div class="row perf">
             <p>
-                <span class="perf-title">Russian Winter Festival </span><span class="perf-time">Sunday, February 25 at the New Russia Center in Rensselaer, New York</span>
+                <span class="perf-title">Church of the Ascension </span><span class="perf-time">Friday, March 23 at 633 Sligo Avenue, Silver Spring, Maryland </span>
             </p>
             <p class="perf-desc">
-                Our chorus is excited to participate the New Russia Cultural Center's Russia Winter Festival Finale! The event, which runs from Saturday, February 24 to Sunday, February 25, will be headlined by the Russian folk trio "Moscow Nights."
+                Join us for an evening of music and our first concert of spring tour! We are singing at the beautiful Ascension Church of The-Episcopal, and the concert starts at 8PM. Suggested donation: $15.
             </p>
             <p class="perf-links">
-                <a href="https://www.newrussiacenter.org" target="_blank">New Russia Center</a> | <a href="https://www.albany.com/event/russian-winter-festival-163038/" target="_blank">Event Info</a>
+                <a href="https://www.facebook.com/events/1743326062385182/" target="_blank">Facebook</a> | <a href="http://www.ascensionsilverspring.org" target="_blank">Church</a>
             </p>
         </div>
         <div class="row perf">
             <p>
-                <span class="perf-title">Spring Tour </span><span class="perf-time">March 23 to March 25 in Washington D.C. and Philadelphia</span>
+                <span class="perf-title">St. Margaret's Church </span><span class="perf-time">Saturday, March 24 at 1601 Pleasant Plains Road, Annapolis, Maryland </span>
             </p>
             <p class="perf-desc">
-                We are going on tour to Washington D.C. and Philadelphia this March during our Spring break! If you would like to have us perform for you, please contact us at: <span class="contactEmail">yalerussianchorus@gmail.com</span>.
+                Join us for an afternoon of Slavic a capella music featuring secular and religious songs from Russia, Ukraine, Macedonia, and other parts of Eastern Europe. This concert is free and open to the public!
             </p>
             <p class="perf-links">
-                <a href="music.html">Music Samples</a> | <a href="history.html">About the YRC</a>
+                <a href="https://www.facebook.com/events/342023669626172/" target="_blank">Facebook</a> | <a href="https://www.st-margarets.org" target="_blank">St. Margaret's</a>
             </p>
         </div>
     </div>
 
     <footer class="footer">
-        <div class="container-fluid">
+        <div class="container">
             <p class="pull-left foot-text">The Yale Russian Chorus est. 1953 </p>
             <div class="pull-right">
                 <ul class="list-inline">
@@ -167,7 +168,6 @@
         const year = now.getFullYear();
         const result = year - 1953;
         document.getElementById("years").innerHTML = result;
-        console.log(result);
     </script>
 
 </body>
