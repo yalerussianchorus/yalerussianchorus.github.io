@@ -171,6 +171,7 @@ body {
 
 .cover-subhead:hover {
   filter: none;
+  color: white;
 }
 
 .cover-desc {
