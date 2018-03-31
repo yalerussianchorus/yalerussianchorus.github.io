@@ -1,4 +1,3 @@
-@import "sticky_footer.css";
 @import "carousel_fade.css";
 @import "owl.carousel.css";
 @import "owl.theme.default.css";
@@ -110,6 +109,7 @@
 
 body {
   background: var(--main-bg-color);
+  min-height: 100%;
 }
 
     /* FOOTER */
@@ -121,6 +121,7 @@ body {
   border-top-style: solid;
   border-top-color: #E7E7E7;
   border-top-width: 1px;
+  padding-top: 15px;
 }
 
 .socials {
@@ -135,54 +136,88 @@ body {
 
 /* HOME PAGE */
 
-#home-text {
+.splash-home, html {
+  height: 100%;
+}
+
+.cover-container {
+  background-image: url("http://res.cloudinary.com/yale-russian-chorus/image/upload/e_blur:318/v1519261452/tours/jan_2018/n_sveshnikov_eastman.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.inner-cover {
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+}
+
+.cover-heading {
   font-family: "LatoL";
-  color: var(--dark-text);
-  margin-top: 3%;
-  width: 70%;
-  margin-bottom: 8%;
+  font-size: 35pt;
 }
 
-#about {
-  background: white;
-  height: 272px;
-  border: 20px solid transparent;
-}
-
-#about p {
-  font-size: 14pt;
-}
-
-#homeEmail {
+.cover-subhead {
   font-family: "DeliciousRoman";
+  color: var(--my-gold);
+  filter: blur(1px);
+  font-size: 22pt;
+}
+
+.cover-subhead:hover {
+  filter: none;
+}
+
+.cover-desc {
+  font-family: "LatoL";
+}
+
+.home-button {
+  background-color: var(--main-bg-color);
+  border: none;
+  padding: 8px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  color: var(--my-gold);
   font-size: 16pt;
+  font-family: "DeliciousRoman";
+  margin: 5px 15px 0 0;
+  cursor: pointer;
+  border-radius: 2px;
 }
 
-#discCarousel {
-  display: block;
-  margin: auto;
-  height: 272px;
-  width: 275px;
-  overflow: hidden;
-  outside-border: 10px solid white;
-}
-
-    /* UPCOMING PERFORMANCES */
+/* CONCERTS PAGE */
 
 #performances {
-  background-color: white;
   color: var(--my-gold);
   font-family: "LatoM";
   font-size: 22pt;
   padding-left: 35px;
-  border-top: 10px solid white;
-  border-bottom: 20px solid white;
+  /* border-top: 10px solid transparent; */
+  border-bottom: 20px solid transparent;
 }
 
+/*#performances:after {
+  height: 3px;
+  display: block;
+  width: 250px;
+  background: #AB8C6F;
+  border-right: 1px white;
+  content: "";
+}*/
+
 .perf {
-  background: white;
+  /* background: white; */
   padding-right: 35px;
   padding-left: 35px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .perf-title {
@@ -192,11 +227,17 @@ body {
 
 .perf-time {
   font-family: "OpenSansL";
+  font-size: 18pt;
+}
+
+.perf-place {
+  font-family: "OpenSansL";
   font-size: 12pt;
 }
 
 .perf-desc {
   font-size: 14pt;
+  font-family: "LatoL";
 }
 
 .perf-links {
@@ -402,6 +443,11 @@ audio::-internal-media-controls-download-button {
 }
 
 /* CONTACT PAGE */
+
+.wrapper {
+  /* temporary fix until switch to bootstrap 4 complete */
+  height: 75vh;
+}
 
 #contact-text {
   font-family: "LatoL";

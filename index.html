@@ -9,159 +9,28 @@
 
 	<title> Yale Russian Chorus </title>
 
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
+	
 </head>
-<body>
-
-    <nav class="navbar navbar-default my-nav">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-links" aria-expanded="false">
-                    <span class="glyphicon glyphicon-menu-hamburger sr-only"></span>
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">
-                    <img class="logo img-circle" src="photos/logoblue.jpg">
-                </a>
-            </div> <!-- end of nav header -->
-            <div class="collapse navbar-collapse" id="nav-links">
-                <div class="nav navbar-nav navbar-text top-title">
-                    <li><a href="index.html">The Yale Russian Chorus<span class="sr-only">(current)</span></a></li>
-                </div>
-                <ul class="nav navbar-nav navbar-right navbar-text my-tabs">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
-                        <ul class="dropdown-menu drops">
-                            <li><a href="history.html">History</a></li>
-                            <li><a href="members.html">Members</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="music.html">Music</a></li>
-                    <!-- <li><a href="news.html">News</a></li> -->
-                    <li><a href="tours.html">Tours</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <div class="container" id="home-text">
-        <div class="row">
-            <div class="col-md-8" id="about">
-                <p>
-                    You've reached the home of the Yale Russian Chorus, North America's oldest Slavic choir.
-                    <br><br>
-                    From Azerbaijan to the White House, from the Russian Steppes to Carnegie Hall -- and now on the internet! -- the Yale Russian Chorus has delighted audiences across the world for <span id="years"></span> years.
-                    <br><br>
-                    Contact us at: <span id="homeEmail" class="gold-text">yalerussianchorus@gmail.com</span>
-                </p>
-            </div>
-            <div class="col-md-4">
-                <div id="discCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="4500">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#discCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#discCarousel" data-slide-to="1"></li>
-                        <li data-target="#discCarousel" data-slide-to="2"></li>
-                        <li data-target="#discCarousel" data-slide-to="3"></li>
-                        <li data-target="#discCarousel" data-slide-to="4"></li>
-                        <li data-target="#discCarousel" data-slide-to="5"></li>
-                        <li data-target="#discCarousel" data-slide-to="6"></li>
-                        <li data-target="#discCarousel" data-slide-to="7"></li>
-                        <li data-target="#discCarousel" data-slide-to="8"></li>
-                    </ol>
-
-                    <!-- Wrapper for slides -->
-                    <!-- lol gotta change those alts tho -->
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img src="http://res.cloudinary.com/yale-russian-chorus/image/upload/c_scale,w_300/v1516077288/1_utjvjl.jpg" alt="cd1">
-                        </div>
-                        <div class="item">
-                            <img src="http://res.cloudinary.com/yale-russian-chorus/image/upload/v1516077288/2_lrz1cv.jpg" alt="cd2">
-                        </div>
-                        <div class="item">
-                            <img src="http://res.cloudinary.com/yale-russian-chorus/image/upload/v1516077288/3_w6xb6b.jpg" alt="cd3">
-                        </div>
-                        <div class="item">
-                            <img src="http://res.cloudinary.com/yale-russian-chorus/image/upload/v1516077288/4_zjluhg.jpg" alt="cd4">
-                        </div>
-                        <div class="item">
-                            <img src="http://res.cloudinary.com/yale-russian-chorus/image/upload/v1516077287/5_jzct4c.jpg" alt="cd5">
-                        </div>
-                        <div class="item">
-                            <img src="http://res.cloudinary.com/yale-russian-chorus/image/upload/c_scale,w_300/v1516077288/6_q0szmm.jpg" alt="cd6">
-                        </div>
-                        <div class="item">
-                            <img src="http://res.cloudinary.com/yale-russian-chorus/image/upload/v1516077288/7_yl95kr.jpg" alt="cd7">
-                        </div>
-                        <div class="item">
-                            <img src="http://res.cloudinary.com/yale-russian-chorus/image/upload/v1516077288/8_hawzwy.jpg" alt="cd8">
-                        </div>
-                        <div class="item">
-                            <img src="http://res.cloudinary.com/yale-russian-chorus/image/upload/v1516077288/9_qhi2jw.jpg" alt="cd9">
-                        </div>
-                    </div> <!-- carousel inner -->
-                </div> <!-- carousel -->
-            </div> <!-- column -->
-        </div> <!-- row -->
-
-        <div class="row top-buffer gold-links" id="performances">
-            Spring Tour 2018
-        </div>
-        <div class="row perf">
-            <p>
-                <span class="perf-title">Church of the Ascension </span><span class="perf-time">Friday, March 23 at 633 Sligo Avenue, Silver Spring, Maryland </span>
-            </p>
-            <p class="perf-desc">
-                Join us for an evening of music and our first concert of spring tour! We are singing at the beautiful Ascension Church of The-Episcopal, and the concert starts at 8PM. Suggested donation: $15.
-            </p>
-            <p class="perf-links">
-                <a href="https://www.facebook.com/events/1743326062385182/" target="_blank">Facebook</a> | <a href="http://www.ascensionsilverspring.org" target="_blank">Church</a>
-            </p>
-        </div>
-        <div class="row perf">
-            <p>
-                <span class="perf-title">St. Margaret's Church </span><span class="perf-time">Saturday, March 24 at 1601 Pleasant Plains Road, Annapolis, Maryland </span>
-            </p>
-            <p class="perf-desc">
-                Join us for an afternoon of Slavic a capella music featuring secular and religious songs from Russia, Ukraine, Macedonia, and other parts of Eastern Europe. This concert is free and open to the public!
-            </p>
-            <p class="perf-links">
-                <a href="https://www.facebook.com/events/342023669626172/" target="_blank">Facebook</a> | <a href="https://www.st-margarets.org" target="_blank">St. Margaret's</a>
-            </p>
-        </div>
-    </div>
-
-    <footer class="footer">
-        <div class="container">
-            <p class="pull-left foot-text">The Yale Russian Chorus est. 1953 </p>
-            <div class="pull-right">
-                <ul class="list-inline">
-                    <li><a href="https://www.facebook.com/yalerussianchorus">
-                        <img class="social" src="http://res.cloudinary.com/yale-russian-chorus/image/upload/c_scale,w_40/v1518243945/Social/facebook.png">
-                    </a></li>
-                    <li><a href="https://www.instagram.com/yalerussianchorus/">
-                        <img class="social" src="http://res.cloudinary.com/yale-russian-chorus/image/upload/c_scale,w_40/v1518243945/Social/insta.png">
-                    </a></li>
-                    <li><a href="https://www.youtube.com/channel/UCwJ-7XOCjrIRClto650iSDg/videos">
-                        <img class="social" src="http://res.cloudinary.com/yale-russian-chorus/image/upload/c_scale,w_40/v1518243945/Social/youtube.png">
-                    </a></li>
-                    <li><a href="https://twitter.com/yrc1953">
-                        <img class="social" src="http://res.cloudinary.com/yale-russian-chorus/image/upload/c_scale,w_40/v1518243945/Social/twitter.png">
-                    </a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+<body class="splash-home">
+	<div class="cover-container d-flex p-3 mx-auto flex-column">
+		<main role="main" class="inner-cover">
+			<h1 class="cover-heading">
+				The Yale Russian Chorus
+			</h1>
+			<p class="lead cover-subhead">
+				North America's oldest Slavic choir
+			<p class="lead cover-desc">
+				From Azerbaijan to the White House, from the Russian Steppes to Carnegie Hall -- and now on the internet! -- the Yale Russian Chorus has delighted audiences across the world for <span id="years"></span> years.
+			</p>
+			<p class="lead home-buttons gold-links">
+				<a href="concerts.html" class="home-button">Performances</a>
+				<a href="contact.html" class="home-button">Contact</a>
+			</p>
+		</main>
+	</div>
 
     <script>
         const now = new Date();
@@ -170,5 +39,8 @@
         document.getElementById("years").innerHTML = result;
     </script>
 
+	<!-- JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
-</html>
