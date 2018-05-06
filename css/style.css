@@ -164,13 +164,7 @@ body {
 
 .cover-subhead {
   font-family: "DeliciousRoman";
-  color: var(--my-gold);
-  filter: blur(1px);
   font-size: 22pt;
-}
-
-.cover-subhead:hover {
-  filter: none;
   color: white;
 }
 
