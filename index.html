@@ -12,11 +12,13 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Ruslan+Display" rel="stylesheet">
 
 </head>
 <body class="splash-home">
 	<div class="cover-container d-flex p-3 mx-auto flex-column">
 		<main role="main" class="inner-cover">
+			<!--
 			<h1 class="cover-heading">
 				The Yale Russian Chorus
 			</h1>
@@ -27,8 +29,24 @@
 			</p>
 			<p class="lead home-buttons gold-links">
 				<a href="concerts.html" class="home-button">Enter Site</a>
-				<!--<a href="contact.html" class="home-button">Contact</a>-->
+				*******FOLLOWING LINE COMMENTED OUT WHEN THIS SECTION IN USE
+				<a href="contact.html" class="home-button">Contact</a>
 			</p>
+			-->
+			
+			<h1 class="anniversary-heading">
+				Celebrating <span style="font-size: 7.5rem;">65</span> Years
+			</h1>
+			
+			<h2 class="anniversary-heading">
+				1953 - 2018
+			</h2>
+			
+			<p class="lead home-buttons gold-links anniversary-buttons">
+				<a href="concerts.html" class="home-button">Anniversary Concert</a>
+				<a href="concerts.html" class="home-button">Enter Full Site</a>
+			</p>
+			
 		</main>
 	</div>
 
@@ -37,6 +55,12 @@
         const year = now.getFullYear();
         const result = year - 1953;
         document.getElementById("years").innerHTML = result;
+        
+        document.getElementById("changingBackground").onload = function() {myFunction()};
+
+		function myFunction() {
+    		document.getElementById("demo").innerHTML = "Iframe is loaded.";
+		}
     </script>
 
 	<!-- JS -->

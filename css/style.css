@@ -141,7 +141,9 @@ body {
 }
 
 .cover-container {
-  background-image: url("http://res.cloudinary.com/yale-russian-chorus/image/upload/e_blur:318/v1519261452/tours/jan_2018/n_sveshnikov_eastman.jpg");
+  /* background-image: url("http://res.cloudinary.com/yale-russian-chorus/image/upload/e_blur:318/v1519261452/tours/jan_2018/n_sveshnikov_eastman.jpg"); */
+  /* background for anniversary concert */
+  background-image: url("http://res.cloudinary.com/yale-russian-chorus/image/upload/e_blur:100/v1534246005/1958_Red_Square_ds0lkq.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -150,7 +152,7 @@ body {
 
 .inner-cover {
   position: absolute;
-  width: 50%;
+  /* width: 50%; */
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
@@ -185,6 +187,28 @@ body {
   margin: 5px 15px 0 0;
   cursor: pointer;
   border-radius: 2px;
+}
+
+/* HOME PAGE STYLES FOR 65 ANNIVERSARY CONVERT */
+
+h1.anniversary-heading {
+  font-family: 'Ruslan Display', cursive;
+  font-size: 6rem;
+  text-align: center;
+  text-shadow: 7px 7px 6px #000;
+  /* color: #0F4D92; */
+}
+
+h2.anniversary-heading {
+  font-family: 'Ruslan Display', cursive;
+  font-size: 3.5rem;
+  text-align: center;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.anniversary-buttons {
+  font-family: 'Ruslan Display', cursive;
+  text-align: center;
 }
 
 /* CONCERTS PAGE */
@@ -313,6 +337,25 @@ audio::-internal-media-controls-download-button {
 
 /* MEMBERS PAGE */
 
+.troika-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.troika-header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.troika-individual {
+  display: flex;
+  
+}
+
 .members-container {
   display: flex;
   flex-flow: row wrap;
@@ -340,6 +383,7 @@ audio::-internal-media-controls-download-button {
 .director-header {
   font-family: "DeliciousRoman";
   color: #262228;
+  height: auto;
 }
 
 .director-header:after {
