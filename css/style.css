@@ -344,16 +344,10 @@ audio::-internal-media-controls-download-button {
   text-align: center;
 }
 
-.troika-header {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  text-align: center;
-}
-
 .troika-individual {
-  display: flex;
-  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .members-container {
@@ -384,20 +378,23 @@ audio::-internal-media-controls-download-button {
   font-family: "DeliciousRoman";
   color: #262228;
   height: auto;
+  display: block;
 }
 
 .director-header:after {
   height: 3px;
   display: block;
-  width: 300px;
+  width: 250px;
   background: #AB8C6F;
   border-right: 1px white;
   content: "";
 }
 
-.director-card {
-  flex: 0 1 auto;
-  padding: 20px 40px 20px 0;
+.troika-card {
+  position: relative;
+  padding: 20px 20px 20px 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .director-text {
