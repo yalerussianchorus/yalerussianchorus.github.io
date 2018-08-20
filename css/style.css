@@ -34,6 +34,10 @@
   font-family: "MuseoSans";
   src: url("../fonts/Museo-Sans.ttf");
 }
+@font-face {
+  font-family: "Ruslan Display";
+  src: url("../fonts/RuslanDisplay.ttf");
+}
 
 :root {
   --dark-text: #262228;
@@ -42,22 +46,52 @@
   --my-gold: #AB8C6F;
 }
 
+.gold-text {
+  color: var(--my-gold);
+}
+
+button {
+  background-color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  color: var(--my-gold);
+  font-size: 20pt;
+  font-family: "DeliciousRoman";
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+button:hover {
+    color: white;
+    background-color: var(--my-gold);
+    -webkit-transition: .3s; /* Safari */
+    transition: .3s;
+}
+
+button:active {
+    /* letter-spacing: 2px; */
+    transform: translate(0, 5px);
+    box-shadow: 0 4px 8px -1px rgba(#121621, .24);
+}
+
+input:focus,
+button:focus {
+    outline: none;
+}
+
 /* ALL PAGES */
 
 .main-text {
   font-family: "LatoL";
   color: var(--dark-text);
-  margin-top: 2%;
-  width: 80%;
-  margin-bottom: 8%;
 }
 
 .top-buffer {
   margin-top: 20px;
-}
-
-.gold-text {
-  color: var(--my-gold);
 }
 
 .gold-links a {
@@ -99,17 +133,30 @@
 .my-tabs {
   font-family: "OpenSansL";
   font-size: 13pt;
+
+}
+
+.my-tabs:hover {
+    border-radius: 5px;
+    background-color: var(--main-bg-color);
+    -webkit-transition: .3s; /* Safari */
+    transition: .3s;
 }
 
 .drops {
   font-size: 13pt;
 }
 
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
     /* BODY */
 
 body {
+
   background: var(--main-bg-color);
-  min-height: 100%;
+  min-height: 100vh;
 }
 
     /* FOOTER */
@@ -124,6 +171,10 @@ body {
   padding-top: 15px;
 }
 
+.foot-text {
+    font-size: 10pt;
+}
+
 .socials {
   margin-left: 40%;
 }
@@ -131,7 +182,15 @@ body {
 .social {
   height: 25px;
   width: 25px;
+  padding: 2px;
+  border-radius: 3px;
   margin-left: 15px;
+}
+
+.social:hover {
+    background-color: var(--my-gold);
+    -webkit-transition: .3s; /* Safari */
+    transition: .3s;
 }
 
 /* HOME PAGE */
@@ -189,11 +248,11 @@ body {
   border-radius: 2px;
 }
 
-/* HOME PAGE STYLES FOR 65 ANNIVERSARY CONVERT */
+/* HOME PAGE STYLES FOR 65 ANNIVERSARY CONCERT */
 
 h1.anniversary-heading {
   font-family: 'Ruslan Display', cursive;
-  font-size: 6rem;
+  font-size: 6vw;
   text-align: center;
   text-shadow: 7px 7px 6px #000;
   /* color: #0F4D92; */
@@ -201,7 +260,7 @@ h1.anniversary-heading {
 
 h2.anniversary-heading {
   font-family: 'Ruslan Display', cursive;
-  font-size: 3.5rem;
+  font-size: 3.5vw;
   text-align: center;
   text-shadow: 2px 2px 2px #000;
 }
@@ -209,6 +268,10 @@ h2.anniversary-heading {
 .anniversary-buttons {
   font-family: 'Ruslan Display', cursive;
   text-align: center;
+}
+
+.anniversary-container {
+    display: inline-block;
 }
 
 /* CONCERTS PAGE */
@@ -278,6 +341,16 @@ h2.anniversary-heading {
   width: 280px;
   height: "auto";
   margin-right: 10%;
+}
+
+/* RUSH PAGE */
+
+h1.rush-heading {
+    color: var(--my-gold);
+    text-align: center;
+    /* font-family: 'Ruslan Display', cursive; */
+    transition: 0.5 ease;
+    -web-kit transition: 0.5 ease;
 }
 
 /* MUSIC PAGE */
@@ -482,7 +555,7 @@ audio::-internal-media-controls-download-button {
 
 .wrapper {
   /* temporary fix until switch to bootstrap 4 complete */
-  height: 75vh;
+  min-height: 75vh;
 }
 
 #contact-text {
@@ -493,18 +566,48 @@ audio::-internal-media-controls-download-button {
   width: 60%;
 }
 
-.donate-button {
-  background-color: white;
-  border: none;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  color: var(--my-gold);
-  font-size: 20pt;
-  font-family: "DeliciousRoman";
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 10px;
+/* Random lol */
+
+/* Rainbow by cabron https://codepen.io/cabron/pen/OVXXmj */
+.rainbow {
+   /* Chrome, Safari, Opera */
+  -webkit-animation: rainbow .5s infinite;
+
+  /* Internet Explorer */
+  -ms-animation: rainbow .5s infinite;
+
+  /* Standar Syntax */
+  animation: rainbow .5s infinite;
 }
 
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow{
+    0%{color: orange;}
+    10%{color: purple;}
+    20%{color: red;}
+    40%{color: yellow;}
+    60%{color: green;}
+    100%{color: blue;}
+    100%{color: orange;}
+}
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+    0%{color: orange;}
+    10%{color: purple;}
+    20%{color: red;}
+    40%{color: yellow;}
+    60%{color: green;}
+    100%{color: blue;}
+    100%{color: orange;}
+}
+
+/* Standard Syntax */
+@keyframes rainbow{
+    0%{color: orange;}
+    10%{color: purple;}
+    20%{color: red;}
+    40%{color: yellow;}
+    60%{color: green;}
+    100%{color: blue;}
+    100%{color: orange;}
+}
