@@ -1,6 +1,8 @@
 @import "carousel_fade.css";
-@import "owl.carousel.css";
+/* @import "owl.carousel.min.css"; */
 @import "owl.theme.default.css";
+/* @import "owl.theme.default.min.css"; */
+@import "vertical-timeline.css";
 
 @font-face {
   font-family: "BulgMod";
@@ -351,6 +353,32 @@ h1.rush-heading {
     /* font-family: 'Ruslan Display', cursive; */
     transition: 0.5 ease;
     -web-kit transition: 0.5 ease;
+}
+
+.rush-managers {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.crop {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    display: block;
+    margin: auto;
+}
+
+.crop img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: auto;
+    -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
 }
 
 /* MUSIC PAGE */
