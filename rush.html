@@ -55,27 +55,41 @@
     </nav>
 
     <div class="container wrapper main-text">
-        <h1 class="rush-heading">Yale Russian Chorus Rush 2018</h1>
+        <h1 class="rush-heading"><strong>Yale Russian Chorus Rush 2018</strong></h1>
         <div class="row" style="display: flex; flex-wrap: wrap;">
             <div class="col-md-6">
                 <h2>Welcome!</h2>
                 <p class="perf-desc">
-                    We're so excited that you're interested in joining North America's oldest Slavic choir!
+                    We're so excited that you're interested in joining North America's oldest Slavic choir in our 65<sup>th</sup> year!
                 </p>
                 <p class="perf-desc">
-                    Since our founding in the midst of the Cold War, we've been bridging the cultural gap between America and Russia through sharing a beautiful and unique musical culture - not to mention, having lots of fun while at it!
+                    Since our founding in the midst of the Cold War, we've fostered cross-cultural understanding by sharing a beautiful and unique musical tradition with audiences across the world. We've performed for presidents and priests, scholars and schoolchildren - not to mention, creating countless memories and forging lifelong friendships along the way.
                 </p>
                 <p class="perf-desc">
-                    We in the Yale Russian Chorus hope you'll join us for our 65<sup>th</sup> year of celebrating cross-cultural understanding and friendship.
+    
+                    We in the Yale Russian Chorus sincerely hope you'll join us and become a part of something that's about more than just music. Read on to find out how!
                 </p>
                 <br>
                 <p class="perf-desc">Yours truly,</p>
                 <br>
                 <p class="perf-desc">YRC Rush Managers 2018</p>
             </div>
+            <div id="stage">
+				<img src="http://res.cloudinary.com/yale-russian-chorus/image/upload/c_crop,h_1333,q_100,w_1333,x_250,y_0/c_scale,h_400,q_100,w_400/v1535298746/Sveshnikov_20180104-2040_jqcqan.jpg">
+            	<img src="http://res.cloudinary.com/yale-russian-chorus/image/upload/c_fill,h_400,q_100,w_400/v1535293395/IMG_1374_pcguga.jpg">
+            	<img src="http://res.cloudinary.com/yale-russian-chorus/image/upload/c_scale,h_400,q_100,w_400/v1535293396/IMG_1385_a9xwtt.jpg">
+            	<img src="http://res.cloudinary.com/yale-russian-chorus/image/upload/c_crop,h_2731,q_100,w_2731,x_0,y_650/c_scale,h_400,q_100,w_400/v1535293397/IMG_1489_ma5dlk.jpg">
+            	<img src="http://res.cloudinary.com/yale-russian-chorus/image/upload/c_fill,h_400,q_100,w_400/v1535294912/IMG_1479_gtwupv.jpg">
+            	<img src="http://res.cloudinary.com/yale-russian-chorus/image/upload/c_crop,h_3024,q_100,w_3024,x_0,y_150/c_scale,h_400,q_100,w_400/v1535293395/IMG_2457_tl6rkr.jpg">
+            	<img src="http://res.cloudinary.com/yale-russian-chorus/image/upload/c_crop,h_3712,w_3712,y_1800/c_scale,h_400,w_400/v1534254464/tours/Spring%202018/DSC_2478.jpg">
+            	<img src="http://res.cloudinary.com/yale-russian-chorus/image/upload/c_crop,h_3024,q_100,w_3024,x_0,y_500/c_scale,h_400,q_100,w_400/v1535293394/IMG_2397_oxgijb.jpg">
+            	<img src="http://res.cloudinary.com/yale-russian-chorus/image/upload/c_fill,h_400,q_100,w_400/v1535293398/IMG_1332_pfunvh.jpg">
+            </div>
+            <!-- Old static picture
             <div class="col-md-6 crop" style="width: 500px; margin-top: 15px;">
                 <img src="http://res.cloudinary.com/yale-russian-chorus/image/upload/c_scale,h_400,q_100/v1535233614/RushYRC_ksyaf2.png" >
             </div>
+            -->
         </div>
         <br>
         <div class="row">
@@ -145,7 +159,7 @@
 
                         <div class="cd-timeline__content js-cd-content">
                             <h2>Russian Back on Campus</h2>
-                            <p>The first concert of the 2018-2019 season, your chance to see us live, and without doubt the highlight of Camp Yale! <br><br>
+                            <p>The first concert of the 2018-2019 season, your chance to see us live, and recommended by 10/10 choristers as the highlight of Shopping Period! <br><br>
                             
                             Audition sign-ups will open immediately after the concert. If you can't make it, don't worry! Just email Raymond at raymond.gao@yale.edu to sign up.</p>
                             <a href="concerts.html">
@@ -191,7 +205,7 @@
                 <h2>Audition Process</h2>
                 <p class="perf-desc">Auditioning for the YRC is simple and straightforward! First, we'll all do some warm-up exercises as a group so your voice is all set for some sweet notes. Then, we’ll see how you do on a couple of basic musicality exercises.</p>
                 <p class="perf-desc">Next, we'll teach you a short line from a song in our repertoire, and see how you sound in a quartet with three members of the YRC.</p>
-                <p class="perf-desc">The final part of your audition will be your solo. Choose a thirty-second to one-minute section of any song that you're comfortable singing. This may be the most nerve-inducing part of the process, but seriously, don't stress! We just want to hear you show off your beautiful voice!</p>
+                <p class="perf-desc">The final and most exciting part of your audition will be your solo. Choose a thirty-second to one-minute section of any song that you're comfortable singing. This may be the most nerve-inducing part of the process, but seriously, don't stress! We just want to hear you show off your beautiful voice!</p>
             	<p class="perf-desc">We'll let you know within a week of your audition whether we would like to see you again in a callback!</p>
             </div>
         </div>
@@ -220,6 +234,25 @@
     </footer>
 
     <script src="js/vertical-timeline.js"></script> <!-- Resource JavaScript -->
+    
+    <!-- Slideshow JS -->
+	<script type="text/javascript">
+	
+	  // Original JavaScript code by Chirp Internet: www.chirp.com.au
+	  // Cause I can't CS lmfao
+	
+	  window.addEventListener("DOMContentLoaded", function(e) {
+	
+	    var stage = document.getElementById("stage");
+	    var arr = stage.getElementsByTagName("img");
+	    var fadeComplete = function(e) { stage.appendChild(arr[0]); };
+	    for(var i=0; i < arr.length; i++) {
+	      arr[i].addEventListener("animationend", fadeComplete, false);
+	    }
+	
+	  }, false);
+	
+	</script>
 
 </body>
 
