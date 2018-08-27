@@ -381,6 +381,39 @@ h1.rush-heading {
           transform: translate(-50%,-50%);
 }
 
+#stage {
+	margin: auto;
+    width: 400px;
+    height: 400px;
+}
+
+#stage img {
+    position: absolute;
+    background: #fff;
+    height: 400px;
+    width: 400px;
+}
+
+#stage img:nth-of-type(1) {
+    -webkit-animation-name: faded;
+    -webkit-animation-delay: 5s;
+    -webkit-animation-duration: 1.7s;
+    z-index: 20;
+}
+  
+#stage img:nth-of-type(2) {
+    z-index: 10;
+}
+
+#stage img:nth-of-type(n+3) {
+    display: none;
+}
+
+@-webkit-keyframes faded {
+    from {opacity: 1.0;}
+    to   {opacity: 0.0;}
+}
+
 /* MUSIC PAGE */
 
 .music-item {
