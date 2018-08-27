@@ -1,0 +1,674 @@
+@import "carousel_fade.css";
+/* @import "owl.carousel.min.css"; */
+@import "owl.theme.default.css";
+/* @import "owl.theme.default.min.css"; */
+@import "vertical-timeline.css";
+
+@font-face {
+  font-family: "BulgMod";
+  src: url("../fonts/BulgariaModerna.otf");
+}
+@font-face {
+  font-family: "OpenSansL";
+  src: url("../fonts/OpenSans-Light.ttf");
+}
+@font-face {
+  font-family: "LatoL";
+  src: url("../fonts/Lato-Light.ttf");
+}
+@font-face {
+  font-family: "LatoBI";
+  src: url("../fonts/Lato-BoldItalic.ttf");
+}
+@font-face {
+  font-family: "LatoM";
+  src: url("../fonts/Lato-Medium.ttf");
+}
+@font-face {
+  font-family: "DeliciousRoman";
+  src: url("../fonts/delicious/Delicious-Roman.otf");
+}
+@font-face {
+  font-family: "DeliciousBold";
+  src: url("../fonts/delicious/Delicious-Bold.otf");;
+}
+@font-face {
+  font-family: "MuseoSans";
+  src: url("../fonts/Museo-Sans.ttf");
+}
+@font-face {
+  font-family: "Ruslan Display";
+  src: url("../fonts/RuslanDisplay.ttf");
+}
+
+:root {
+  --dark-text: #262228;
+  --main-bg-color: #f2f2f2;
+  --box-blue: #74A9FF;
+  --my-gold: #AB8C6F;
+}
+
+.gold-text {
+  color: var(--my-gold);
+}
+
+button {
+  background-color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  color: var(--my-gold);
+  font-size: 20pt;
+  font-family: "DeliciousRoman";
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+button:hover {
+    color: white;
+    background-color: var(--my-gold);
+    -webkit-transition: .3s; /* Safari */
+    transition: .3s;
+}
+
+button:active {
+    /* letter-spacing: 2px; */
+    transform: translate(0, 5px);
+    box-shadow: 0 4px 8px -1px rgba(#121621, .24);
+}
+
+input:focus,
+button:focus {
+    outline: none;
+}
+
+/* ALL PAGES */
+
+.main-text {
+  font-family: "LatoL";
+  color: var(--dark-text);
+}
+
+.top-buffer {
+  margin-top: 20px;
+}
+
+.gold-links a {
+  color: #AB8C6F !important;
+}
+
+    /* NAVBAR */
+
+@media (min-width: 768px) {
+    .navbar .navbar-nav .middle {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
+
+.top-title {
+  font-family: "BulgMod";
+  font-size: 22pt;
+}
+
+.my-nav {
+  background-color: white;
+}
+
+.my-nav a {
+  color: var(--dark-text) !important;
+}
+
+.logo {
+  height: 80px;
+  width: 80px;
+}
+
+.my-tabs {
+  font-family: "OpenSansL";
+  font-size: 13pt;
+
+}
+
+.my-tabs:hover {
+    border-radius: 5px;
+    background-color: var(--main-bg-color);
+    -webkit-transition: .3s; /* Safari */
+    transition: .3s;
+}
+
+.drops {
+  font-size: 13pt;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+    /* BODY */
+
+body {
+
+  background: var(--main-bg-color);
+  min-height: 100vh;
+}
+
+    /* FOOTER */
+
+.footer {
+  background-color: white;
+  font-family: "OpenSansL";
+  color: #262228;
+  border-top-style: solid;
+  border-top-color: #E7E7E7;
+  border-top-width: 1px;
+  padding-top: 15px;
+}
+
+.foot-text {
+    font-size: 10pt;
+}
+
+.socials {
+  margin-left: 40%;
+}
+
+.social {
+  height: 25px;
+  width: 25px;
+  padding: 2px;
+  border-radius: 3px;
+  margin-left: 15px;
+}
+
+.social:hover {
+    background-color: var(--my-gold);
+    -webkit-transition: .3s; /* Safari */
+    transition: .3s;
+}
+
+/* HOME PAGE */
+
+.splash-home, html {
+  height: 100%;
+}
+
+.cover-container {
+  /* background-image: url("http://res.cloudinary.com/yale-russian-chorus/image/upload/e_blur:318/v1519261452/tours/jan_2018/n_sveshnikov_eastman.jpg"); */
+  /* background for anniversary concert */
+  background-image: url("http://res.cloudinary.com/yale-russian-chorus/image/upload/e_blur:100/v1534246005/1958_Red_Square_ds0lkq.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.inner-cover {
+  position: absolute;
+  /* width: 50%; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+}
+
+.cover-heading {
+  font-family: "LatoL";
+  font-size: 35pt;
+}
+
+.cover-subhead {
+  font-family: "DeliciousRoman";
+  font-size: 22pt;
+  color: white;
+}
+
+.cover-desc {
+  font-family: "LatoL";
+}
+
+.home-button {
+  background-color: var(--main-bg-color);
+  border: none;
+  padding: 8px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  color: var(--my-gold);
+  font-size: 16pt;
+  font-family: "DeliciousRoman";
+  margin: 5px 15px 0 0;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+/* HOME PAGE STYLES FOR 65 ANNIVERSARY CONCERT */
+
+h1.anniversary-heading {
+  font-family: 'Ruslan Display', cursive;
+  font-size: 6vw;
+  text-align: center;
+  text-shadow: 7px 7px 6px #000;
+  /* color: #0F4D92; */
+}
+
+h2.anniversary-heading {
+  font-family: 'Ruslan Display', cursive;
+  font-size: 3.5vw;
+  text-align: center;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.anniversary-buttons {
+  /* font-family: 'Ruslan Display', cursive; */
+  text-align: center;
+}
+
+.anniversary-container {
+    display: inline-block;
+}
+
+/* CONCERTS PAGE */
+
+#performances {
+  color: var(--my-gold);
+  font-family: "LatoM";
+  font-size: 22pt;
+  padding-left: 35px;
+  /* border-top: 10px solid transparent; */
+  border-bottom: 20px solid transparent;
+}
+
+/*#performances:after {
+  height: 3px;
+  display: block;
+  width: 250px;
+  background: #AB8C6F;
+  border-right: 1px white;
+  content: "";
+}*/
+
+.perf {
+  /* background: white; */
+  padding-right: 35px;
+  padding-left: 35px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.perf-title {
+  font-family: "DeliciousRoman";
+  font-size: 22pt;
+}
+
+.perf-time {
+  font-family: "OpenSansL";
+  font-size: 16pt;
+}
+
+.perf-place {
+  font-family: "OpenSansL";
+  font-size: 12pt;
+}
+
+.perf-desc {
+  font-size: 14pt;
+  font-family: "LatoL";
+}
+
+.perf-links {
+  font-family: "DeliciousRoman";
+  font-size: 18pt;
+}
+
+.perf-links a {
+  color: #AB8C6F !important;
+}
+
+/* HISTORY */
+
+.bold-quote {
+  font-family: "LatoBI";
+}
+
+#kremPoster {
+  width: 280px;
+  height: "auto";
+  margin-right: 10%;
+}
+
+/* RUSH PAGE */
+
+h1.rush-heading {
+    color: var(--my-gold);
+    text-align: center;
+    /* font-family: 'Ruslan Display', cursive; */
+    transition: 0.5 ease;
+    -web-kit transition: 0.5 ease;
+}
+
+.rush-managers {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.crop {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    display: block;
+    margin: auto;
+}
+
+.crop img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: auto;
+    -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+
+#stage {
+	margin: auto;
+    width: 400px;
+    height: 400px;
+}
+
+#stage img {
+    position: absolute;
+    background: #fff;
+    height: 400px;
+    width: 400px;
+}
+
+#stage img:nth-of-type(1) {
+    -webkit-animation-name: faded;
+    -webkit-animation-delay: 5s;
+    -webkit-animation-duration: 1.7s;
+    z-index: 20;
+}
+  
+#stage img:nth-of-type(2) {
+    z-index: 10;
+}
+
+#stage img:nth-of-type(n+3) {
+    display: none;
+}
+
+@-webkit-keyframes faded {
+    from {opacity: 1.0;}
+    to   {opacity: 0.0;}
+}
+
+/* MUSIC PAGE */
+
+.music-item {
+  background-color: #262228;
+  width: 100%;
+}
+
+audio::-internal-media-controls-download-button {
+    display:none;
+}
+
+.music-header {
+  font-family: "DeliciousRoman";
+  color: #262228;
+  padding-left: 16px;
+}
+
+.music-header:after {
+  height: 3px;
+  display: block;
+  width: 350px;
+  background: #AB8C6F;
+  border-right: 1px white;
+  content: "";
+}
+
+.music-text {
+  font-family: "DeliciousRoman";
+}
+
+.list-group-item {
+  border-radius: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.music-vid {
+  width: 448px;
+  height: 252px;
+  display: block;
+  margin: auto;
+}
+
+.below-vid {
+  margin-top: 20px;
+  background: white;
+  border: 10px solid white;
+  font-size: 14pt;
+  font-family: "LatoL";
+}
+
+#musicbox {
+  width: 80%;
+}
+
+/* MEMBERS PAGE */
+
+.troika-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.troika-individual {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.members-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+.member-card {
+  flex: 0 1 auto;
+  padding: 20px 40px 20px 0;
+}
+
+.section-header {
+  font-family: "DeliciousRoman";
+  color: #262228;
+}
+
+.section-header:after {
+  height: 3px;
+  display: block;
+  width: 150px;
+  background: #AB8C6F;
+  border-right: 1px white;
+  content: "";
+}
+
+.director-header {
+  font-family: "DeliciousRoman";
+  color: #262228;
+  height: auto;
+  display: block;
+}
+
+.director-header:after {
+  height: 3px;
+  display: block;
+  width: 250px;
+  background: #AB8C6F;
+  border-right: 1px white;
+  content: "";
+}
+
+.troika-card {
+  position: relative;
+  padding: 20px 20px 20px 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.director-text {
+  padding: 20px 40px 20px 0;
+  font-family: "LatoL";
+  font-size: 16pt;
+}
+
+.director-pic {
+  /* cursor: pointer; */
+  width: 200px;
+}
+
+.member-pic {
+  cursor: pointer;
+  width: 200px;
+}
+
+.member-card-text {
+  text-align: center;
+  font-family: "LatoL";
+}
+
+.modal-title {
+  font-family: "LatoL";
+  font-size: 18pt;
+  display: inline;
+}
+
+.modal-body {
+  font-family: "LatoL";
+  font-size: 15pt;
+}
+
+.modal-dialog {
+  top: 10%;
+  width: 50%;
+}
+
+.emph {
+  font-size: 16pt;
+  font-family: "DeliciousBold";
+}
+
+#alumPic {
+  width: 300px;
+}
+
+.small-text {
+  font-size: 7pt;
+  font-family: "LatoL";
+}
+
+/* TOURS PAGE */
+
+.tour-header {
+  font-family: "DeliciousRoman";
+  color: #262228;
+}
+
+.tour-header:after {
+  height: 3px;
+  display: block;
+  width: 700px;
+  background: #AB8C6F;
+  border-right: 1px white;
+  content: "";
+}
+
+.tour-place {
+  font-family: "OpenSansL";
+  font-size: 15pt;
+}
+
+.carousel-row {
+  height: 400px;
+}
+
+/* try to get this to work */
+.tour-carousel {
+  height: 350px !important;
+}
+
+/* CONTACT PAGE */
+
+.wrapper {
+  /* temporary fix until switch to bootstrap 4 complete */
+  min-height: 75vh;
+}
+
+#contact-text {
+  font-family: "LatoL";
+  font-size: 16pt;
+  color: #262228;
+  margin-top: 5%;
+  width: 60%;
+}
+
+/* Random lol */
+
+/* Rainbow by cabron https://codepen.io/cabron/pen/OVXXmj */
+.rainbow {
+   /* Chrome, Safari, Opera */
+  -webkit-animation: rainbow .5s infinite;
+
+  /* Internet Explorer */
+  -ms-animation: rainbow .5s infinite;
+
+  /* Standar Syntax */
+  animation: rainbow .5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow{
+    0%{color: orange;}
+    10%{color: purple;}
+    20%{color: red;}
+    40%{color: yellow;}
+    60%{color: green;}
+    100%{color: blue;}
+    100%{color: orange;}
+}
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+    0%{color: orange;}
+    10%{color: purple;}
+    20%{color: red;}
+    40%{color: yellow;}
+    60%{color: green;}
+    100%{color: blue;}
+    100%{color: orange;}
+}
+
+/* Standard Syntax */
+@keyframes rainbow{
+    0%{color: orange;}
+    10%{color: purple;}
+    20%{color: red;}
+    40%{color: yellow;}
+    60%{color: green;}
+    100%{color: blue;}
+    100%{color: orange;}
+}
