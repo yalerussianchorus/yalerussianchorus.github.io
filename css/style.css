@@ -202,9 +202,9 @@ body {
 }
 
 .cover-container {
-  /* background-image: url("http://res.cloudinary.com/yale-russian-chorus/image/upload/e_blur:318/v1519261452/tours/jan_2018/n_sveshnikov_eastman.jpg"); */
+  background-image: url("http://res.cloudinary.com/yale-russian-chorus/image/upload/e_blur:318/v1519261452/tours/jan_2018/n_sveshnikov_eastman.jpg");
   /* background for anniversary concert */
-  background-image: url("http://res.cloudinary.com/yale-russian-chorus/image/upload/e_blur:100/v1534246005/1958_Red_Square_ds0lkq.jpg");
+  /* background-image: url("http://res.cloudinary.com/yale-russian-chorus/image/upload/e_blur:100/v1534246005/1958_Red_Square_ds0lkq.jpg"); */
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
