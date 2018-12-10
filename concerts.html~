@@ -66,16 +66,21 @@
             <div class="col-md-2 text-right">
                 <p>
                     <span class="perf-time">
-                    SAT 12/1<br>4:00PM</span>
+                    </span>
                 </p>
             </div>
             <div class="col-md-9">
-                <p>
-                    <span class="perf-title">Ukraine's Revolution of Dignity, 5-Year Anniversary and Holomodor Remembrance Event </span><span class="perf-place">University of New Haven Bucknall Theatre</span>
+                <p style="text-align: center;">
+                    <span class="perf-title">Expect more in Spring 2019!</span>
                 </p>
-                <p class="perf-desc">
-                   	Join the Yale Russian Chorus, pianist Victor Markiew, and the Statera Quartet for a solemn memorial of Holomodor, the man-made famine that killed millions in Soviet Ukraine from 1932-3. Reflect with us to music by Edward Davies, Simon Hutchinson, Sergei Rachmaninoff, and Myroslav Skoryk.
-                </p>
+            </div>
+        </div>
+
+        <div class="row top-buffer">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-10" id="performances">
+                <h2>Past Concerts</h2>
             </div>
         </div>
         <div class="row perf">
@@ -94,30 +99,19 @@
                 </p>
             </div>
         </div>
-
-        <div class="row top-buffer">
-            <div class="col-md-2">
-            </div>
-            <div class="col-md-10" id="performances">
-                <h2>Past Concerts</h2>
-            </div>
-        </div>
         <div class="row perf">
             <div class="col-md-2 text-right">
                 <p>
                     <span class="perf-time">
-                    SAT 9/1<br>7:00PM</span>
+                    SAT 12/1<br>4:00PM</span>
                 </p>
             </div>
             <div class="col-md-9">
                 <p>
-                    <span class="perf-title">Russian Back on Campus </span><span class="perf-place">William L. Harkness Hall, Room 201</span>
+                    <span class="perf-title">Ukraine's Revolution of Dignity, 5-Year Anniversary and Holomodor Remembrance Event </span><span class="perf-place">University of New Haven Bucknall Theatre</span>
                 </p>
                 <p class="perf-desc">
-                   	Welcome (back) to Yale! We hope everyone has had a wonderful summer, and we invite you to join us for an evening of revelry as we celebrate the beginning of our 65th year!
-                </p>
-                <p class="perf-desc">
-                   	<a style="font-family: 'LatoBI', sans-serif;" href="rush.html"><strong>Prospective rushees,</strong></a> this is your chance to hear us live, meet the group, ask any questions, as well as sign up for auditions immediately following the concert. See you there!
+                   	Join the Yale Russian Chorus, pianist Victor Markiew, and the Statera Quartet for a solemn memorial of Holomodor, the man-made famine that killed millions in Soviet Ukraine from 1932-3. Reflect with us to music by Edward Davies, Simon Hutchinson, Sergei Rachmaninoff, and Myroslav Skoryk.
                 </p>
             </div>
         </div>
@@ -137,6 +131,25 @@
                 </p>
                 <p class="perf-desc">
                     <em style="color: #989898;">This event is supported by the Yale Institute of Sacred Music</em>
+                </p>
+            </div>
+        </div>
+        <div class="row perf">
+            <div class="col-md-2 text-right">
+                <p>
+                    <span class="perf-time">
+                    SAT 9/1<br>7:00PM</span>
+                </p>
+            </div>
+            <div class="col-md-9">
+                <p>
+                    <span class="perf-title">Russian Back on Campus </span><span class="perf-place">William L. Harkness Hall, Room 201</span>
+                </p>
+                <p class="perf-desc">
+                   	Welcome (back) to Yale! We hope everyone has had a wonderful summer, and we invite you to join us for an evening of revelry as we celebrate the beginning of our 65th year!
+                </p>
+                <p class="perf-desc">
+                   	<a style="font-family: 'LatoBI', sans-serif;" href="rush.html"><strong>Prospective rushees,</strong></a> this is your chance to hear us live, meet the group, ask any questions, as well as sign up for auditions immediately following the concert. See you there!
                 </p>
             </div>
         </div>
