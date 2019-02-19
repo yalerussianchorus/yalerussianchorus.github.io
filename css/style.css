@@ -480,9 +480,24 @@ audio::-internal-media-controls-download-button {
 }
 
 .troika-individual {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+.header-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.header-title {
+  text-align: center;
 }
 
 .members-container {
@@ -514,16 +529,21 @@ audio::-internal-media-controls-download-button {
   color: #262228;
   height: auto;
   display: block;
+  width: 300px;
+  border-bottom: 3px solid #AB8C6F;
 }
 
-.director-header:after {
+/*.director-header:after {
   height: 3px;
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 250px;
   background: #AB8C6F;
   border-right: 1px white;
   content: "";
-}
+  align-self: center;
+  justify-content: center;
+}*/
 
 .troika-card {
   position: relative;
@@ -546,11 +566,20 @@ audio::-internal-media-controls-download-button {
 .member-pic {
   cursor: pointer;
   width: 200px;
+  height: 300px;
+}
+
+.member-pic-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .member-card-text {
   text-align: center;
   font-family: "LatoL";
+  width: 300px;
+  height: 20px;
 }
 
 .modal-title {
