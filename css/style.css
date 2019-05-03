@@ -60,7 +60,7 @@ button {
   text-decoration: none;
   display: inline-block;
   color: var(--my-gold);
-  font-size: 20pt;
+  font-size: 20px;
   font-family: "DeliciousRoman";
   margin: 4px 2px;
   cursor: pointer;
@@ -68,10 +68,10 @@ button {
 }
 
 button:hover {
-    color: white;
+	color: white;
     background-color: var(--my-gold);
     -webkit-transition: .3s; /* Safari */
-    transition: .3s;
+	transition: .3s;
 }
 
 button:active {
@@ -98,11 +98,16 @@ button:focus {
 
 .gold-links a {
   color: #AB8C6F !important;
+  text-decoration: none;
 }
 
     /* NAVBAR */
 
-@media (min-width: 768px) {
+.navbar {
+	margin-bottom: 1%;
+}
+
+@media (min-width: 990px) {
     .navbar .navbar-nav .middle {
         display: inline-block;
         float: none;
@@ -116,7 +121,12 @@ button:focus {
 
 .top-title {
   font-family: "BulgMod";
-  font-size: 22pt;
+  font-size: 26px;
+}
+@media (max-width: 375px) {
+  .top-title {
+    font-size: 20px;
+  }
 }
 
 .my-nav {
@@ -128,14 +138,24 @@ button:focus {
 }
 
 .logo {
-  height: 80px;
-  width: 80px;
+  position: relative;
+  height: 90px;
+  width: 90px;
+}
+@media (max-width: 375px) {
+  .logo {
+    height: 80px;
+    width: 80px;
+  }
 }
 
 .my-tabs {
   font-family: "OpenSansL";
-  font-size: 13pt;
+  font-size: 16px;
+}
 
+.my-tabs a {
+  text-decoration: none;
 }
 
 .my-tabs:hover {
@@ -146,11 +166,12 @@ button:focus {
 }
 
 .drops {
-  font-size: 13pt;
+  font-size: 13px;
 }
 
 .dropdown:hover .dropdown-menu {
-  display: block;
+	display: block;
+	transform: translateY(-5px);
 }
 
     /* BODY */
@@ -171,11 +192,16 @@ body {
     border-top-style: solid;
     border-top-color: #E7E7E7;
     border-top-width: 1px;
-    padding-top: 15px;
+	padding-top: 15px;
+	margin-top: 15px;
+    /* bottom: 0;
+    left: 0;
+    right: 0; */
 }
 
 .foot-text {
-    font-size: 10pt;
+	padding-left: 10px;
+    font-size: 10px;
 }
 
 .socials {
@@ -187,7 +213,7 @@ body {
   width: 25px;
   padding: 2px;
   border-radius: 3px;
-  margin-left: 15px;
+  margin: -10px 10px 0px 5px;
 }
 
 .social:hover {
@@ -198,18 +224,57 @@ body {
 
 /* HOME PAGE */
 
-.splash-home, html {
+.html {
   height: 100%;
 }
 
-.cover-container {
-  background-image: url("http://res.cloudinary.com/yale-russian-chorus/image/upload/e_blur:318/v1519261452/tours/jan_2018/n_sveshnikov_eastman.jpg");
-  /* background for anniversary concert */
-  /* background-image: url("http://res.cloudinary.com/yale-russian-chorus/image/upload/e_blur:100/v1534246005/1958_Red_Square_ds0lkq.jpg"); */
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.splash-home {
+	width: 100%;
+	height: 90vh;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	background-image: url("http://res.cloudinary.com/yale-russian-chorus/image/upload/e_blur:318/v1519261452/tours/jan_2018/n_sveshnikov_eastman.jpg");
+	/* background for anniversary concert */
+	/* background-image: url("http://res.cloudinary.com/yale-russian-chorus/image/upload/e_blur:100/v1534246005/1958_Red_Square_ds0lkq.jpg"); */
+}
+@media (max-width: 500px) {
+  .video-wrapper video {
+    display: none;
+  }
+}
+
+.video-wrapper {
+  position: relative;
+  margin: 0 auto;
+  background: transparent;
+  max-height: 100%;
+  width: 100%;
+  vertical-align: baseline;
+}
+.video-wrapper video {
+  display: block;
+  position:fixed;
+  top: 50%;
+  left: 50%;
+  z-index: -100;
+  min-width: 100%;
+  min-height: 100%;
+  height: auto;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  overflow:hidden;
+  object-fit: contain;
+}
+@media (max-width: 800px) {
+  .video-wrapper video {
+    display: none;
+  }
 }
 
 .inner-cover {
@@ -222,13 +287,13 @@ body {
 }
 
 .cover-heading {
-  font-family: "LatoL";
-  font-size: 35pt;
+  font-family: "BulgMod";
+  font-size: 50px;
 }
 
 .cover-subhead {
   font-family: "DeliciousRoman";
-  font-size: 22pt;
+  font-size: 22px;
   color: white;
 }
 
@@ -244,7 +309,7 @@ body {
   text-decoration: none;
   display: inline-block;
   color: var(--my-gold);
-  font-size: 16pt;
+  font-size: 16px;
   font-family: "DeliciousRoman";
   margin: 5px 15px 0 0;
   cursor: pointer;
@@ -279,10 +344,10 @@ h2.anniversary-heading {
 
 /* CONCERTS PAGE */
 
-#performances {
+.performances {
   color: var(--my-gold);
-  font-family: "LatoM";
-  font-size: 22pt;
+  font-family: "DeliciousBold";
+  font-size: 22px;
   padding-left: 35px;
   /* border-top: 10px solid transparent; */
   border-bottom: 20px solid transparent;
@@ -307,27 +372,27 @@ h2.anniversary-heading {
 
 .perf-title {
   font-family: "DeliciousRoman";
-  font-size: 22pt;
+  font-size: 22px;
 }
 
 .perf-time {
   font-family: "OpenSansL";
-  font-size: 16pt;
+  font-size: 18px;
 }
 
 .perf-place {
   font-family: "OpenSansL";
-  font-size: 12pt;
+  font-size: 14px;
 }
 
 .perf-desc {
-  font-size: 14pt;
+  font-size: 14px;
   font-family: "LatoL";
 }
 
 .perf-links {
   font-family: "DeliciousRoman";
-  font-size: 18pt;
+  font-size: 18px;
 }
 
 .perf-links a {
@@ -340,8 +405,14 @@ h2.anniversary-heading {
   font-family: "LatoBI";
 }
 
-#kremPoster {
-  width: 280px;
+.history-text {
+	padding: 20px 40px 20px 0;
+    font-family: "LatoL";
+    font-size: 18px;
+}
+
+.history-pic {
+  width: 300px;
   height: "auto";
   margin-right: 10%;
 }
@@ -457,12 +528,17 @@ audio::-internal-media-controls-download-button {
   display: block;
   margin: auto;
 }
+@media (max-width: 400px) {
+	.music-vid {
+		width: 350px;
+	}
+}
 
 .below-vid {
   margin-top: 20px;
   background: white;
   border: 10px solid white;
-  font-size: 14pt;
+  font-size: 14px;
   font-family: "LatoL";
 }
 
@@ -529,8 +605,9 @@ audio::-internal-media-controls-download-button {
   color: #262228;
   height: auto;
   display: block;
-  width: 300px;
+  width: 40%;
   border-bottom: 3px solid #AB8C6F;
+  margin-bottom: 20px;
 }
 
 /*.director-header:after {
@@ -545,6 +622,8 @@ audio::-internal-media-controls-download-button {
   justify-content: center;
 }*/
 
+
+
 .troika-card {
   position: relative;
   padding: 20px 20px 20px 20px;
@@ -555,7 +634,7 @@ audio::-internal-media-controls-download-button {
 .director-text {
   padding: 20px 40px 20px 0;
   font-family: "LatoL";
-  font-size: 16pt;
+  font-size: 16px;
 }
 
 .director-pic {
@@ -584,13 +663,13 @@ audio::-internal-media-controls-download-button {
 
 .modal-title {
   font-family: "LatoL";
-  font-size: 18pt;
+  font-size: 18px;
   display: inline;
 }
 
 .modal-body {
   font-family: "LatoL";
-  font-size: 15pt;
+  font-size: 15px;
 }
 
 .modal-dialog {
@@ -599,7 +678,7 @@ audio::-internal-media-controls-download-button {
 }
 
 .emph {
-  font-size: 16pt;
+  font-size: 16px;
   font-family: "DeliciousBold";
 }
 
@@ -608,7 +687,7 @@ audio::-internal-media-controls-download-button {
 }
 
 .small-text {
-  font-size: 7pt;
+  font-size: 7px;
   font-family: "LatoL";
 }
 
@@ -622,15 +701,27 @@ audio::-internal-media-controls-download-button {
 .tour-header:after {
   height: 3px;
   display: block;
-  width: 700px;
+  width: 35%;
   background: #AB8C6F;
   border-right: 1px white;
   content: "";
+  margin-bottom: 0.5%;
 }
 
 .tour-place {
   font-family: "OpenSansL";
-  font-size: 15pt;
+  font-size: 15px;
+}
+
+.tour-pic {
+	width: 500px;
+	margin-top: 0.5%;
+	margin-bottom: 0.5%;
+}
+@media (max-width: 400px) {
+	.tour-pic {
+		width: 180px;
+	}
 }
 
 .carousel-row {
@@ -651,7 +742,7 @@ audio::-internal-media-controls-download-button {
 
 #contact-text {
   font-family: "LatoL";
-  font-size: 16pt;
+  font-size: 16px;
   color: #262228;
   margin-top: 5%;
   width: 60%;

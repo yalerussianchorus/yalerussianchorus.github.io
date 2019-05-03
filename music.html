@@ -11,57 +11,61 @@
     <title> Yale Russian Chorus - Music </title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <nav class="navbar navbar-default my-nav">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-links" aria-expanded="false">
-                    <span class="glyphicon glyphicon-menu-hamburger sr-only"></span>
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">
-                    <img class="logo img-circle" src="photos/logoblue.jpg">
-                </a>
-            </div> <!-- end of nav header -->
-            <div class="collapse navbar-collapse" id="nav-links">
-                <div class="nav navbar-nav navbar-text top-title">
-                    <li><a href="index.html">The Yale Russian Chorus<span class="sr-only">(current)</span></a></li>
-                </div>
-                <ul class="nav navbar-nav navbar-right navbar-text">
-                    <li class="dropdown my-tabs">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container mx-auto">
+            <a class="navbar-brand top-title" href="index.html">
+                <img class="logo img-circle" src="photos/icon.svg" />
+                The Yale Russian Chorus
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown my-tabs">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
                         <ul class="dropdown-menu drops">
-                            <li><a href="history.html">History</a></li>
-                            <li><a href="members.html">Members</a></li>
+                            <li><a class="nav-link" href="history.html">History</a></li>
+                            <li><a class="nav-link" href="members.html">Members</a></li>
                         </ul>
                     </li>
-                    <li class="my-tabs"><a href="concerts.html">Concerts</a></li>
-                    <li class="my-tabs"><a href="rush.html">Rush</a></li>
-                    <li class="my-tabs"><a href="music.html">Music</a></li>
-                    <li class="my-tabs"><a href="tours.html">Tours</a></li>
-                    <li class="my-tabs"><a href="contact.html">Contact</a></li>
+                    <li class="nav-item my-tabs"><a class="nav-link" href="concerts.html">Concerts</a></li>
+                    <li class="nav-item my-tabs"><a class="nav-link" href="music.html">Music</a></li>
+                    <li class="nav-item my-tabs"><a class="nav-link" href="tours.html">Tours</a></li>
+                    <li class="nav-item my-tabs"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <div class="container main-text">
+        <div class="row top-buffer">
+            <div class="music-header">
+                <h2>Repertoire</h2>
+            </div>
+        </div>
+        <div class="col">
+            <p>
+                Our repertoire spans over a thousand years of history and multiple continents: Russian Folk Songs (Kalinka, The Legend of the Twelve Brigands), Cossack marches (Oi, Na Hory, Vyotsa), Slovak lullabies (Hej, Pada Pada), Macedonian Wedding Songs (Ne Sedi, Djemo), Liturgical music (Blazhen Muzh, Bogoroditse Devo), and the occasional American Spiritual (Ride the Chariot, Steal Away).
+            </p>
+            <p>
+                You can listen to samples of our music here, check out our YouTube channel, or order a CD here.
+            </p>
+        </div>
         <div class="row">
             <div class="col-md-5">
-                <div>
-                    <div class="music-header">
-                        <h2>Music and Video Samples</h2>
-                    </div>
+                <div class="music-header">
+                    <h2>Music and Video Samples</h2>
                 </div>
                 <ul class="list-group">
                     <li class="list-group-item">
@@ -80,36 +84,39 @@
                         <h4 class="music-text">Po Maryam, Po Volnam</h4>
                         <audio class="music-item" src="music/Po_maryam.mp3" controls></audio>
                     </li>
+                    <li class="list-group-item">
+                        <h4 class="music-text">Blazhen Muzh</h4>
+                        <audio class="music-item" src="music/Blazhen Muzh.mp3" controls></audio>
+                    </li>
                 </ul>
             </div>
             <div class="col-md-7">
-            	<h2 style="text-align: center;">Check us out on <a href="http://www.youtube.com/channel/UCwJ-7XOCjrIRClto650iSDg/featured">YouTube!</a></h2>
-                <iframe class="music-vid" src="https://www.youtube.com/embed/WHiHB0OLx9k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            	<iframe class="music-vid" src="https://www.youtube.com/embed/dGBISqZLMOE" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
                 <br>
-                <iframe class="music-vid" src="https://www.youtube.com/embed/S-KAKyE9eus" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+                <iframe class="music-vid" src="https://www.youtube.com/embed/BGtoL41XWEg" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
             </div>
         </div>
     </div>
 
     <footer class="footer">
         <div class="container">
-            <p class="pull-left">The Yale Russian Chorus est. 1953 </p>
-            <div class="pull-right">
-                <ul class="list-inline">
-                    <li><a href="https://www.facebook.com/yalerussianchorus" target="_blank">
-                        <img class="social" src="http://res.cloudinary.com/yale-russian-chorus/image/upload/c_scale,w_40/v1518243945/Social/facebook.png">
-                    </a></li>
-                    <li><a href="https://www.instagram.com/yalerussianchorus/" target="_blank">
-                        <img class="social" src="http://res.cloudinary.com/yale-russian-chorus/image/upload/c_scale,w_40/v1518243945/Social/insta.png">
-                    </a></li>
-                    <li><a href="https://www.youtube.com/channel/UCwJ-7XOCjrIRClto650iSDg/videos" target="_blank">
-                        <img class="social" src="http://res.cloudinary.com/yale-russian-chorus/image/upload/c_scale,w_40/v1518243945/Social/youtube.png">
-                    </a></li>
-                    <li><a href="https://twitter.com/yrc1953" target="_blank">
-                        <img class="social" src="http://res.cloudinary.com/yale-russian-chorus/image/upload/c_scale,w_40/v1518243945/Social/twitter.png">
-                    </a></li>
-                </ul>
-            </div>
+			<div class="row">
+				<div class="d-inline-block foot-text">The Yale Russian Chorus est. 1953</div>
+				<div class="d-inline-block ml-auto">
+					<a style="text-decoration: none;" href="https://www.facebook.com/yalerussianchorus" target="_blank">
+						<img class="social" src="http://res.cloudinary.com/yale-russian-chorus/image/upload/c_scale,w_40/v1518243945/Social/facebook.png">
+					</a>
+					<a style="text-decoration: none;" href="https://www.instagram.com/yalerussianchorus/" target="_blank">
+						<img class="social" src="http://res.cloudinary.com/yale-russian-chorus/image/upload/c_scale,w_40/v1518243945/Social/insta.png">
+					</a>
+					<a style="text-decoration: none;" href="https://www.youtube.com/channel/UCwJ-7XOCjrIRClto650iSDg/videos" target="_blank">
+						<img class="social" src="http://res.cloudinary.com/yale-russian-chorus/image/upload/c_scale,w_40/v1518243945/Social/youtube.png">
+					</a>
+					<a style="text-decoration: none;" href="https://twitter.com/yrc1953" target="_blank">
+						<img class="social" src="http://res.cloudinary.com/yale-russian-chorus/image/upload/c_scale,w_40/v1518243945/Social/twitter.png">
+					</a>
+				</div>
+			</div>
         </div>
     </footer>
 </body>
