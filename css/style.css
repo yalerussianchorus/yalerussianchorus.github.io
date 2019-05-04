@@ -523,8 +523,8 @@ audio::-internal-media-controls-download-button {
 }
 
 .music-vid {
-  width: 448px;
-  height: 252px;
+  width: 75%;
+  height: 45%;
   display: block;
   margin: auto;
 }
