@@ -562,6 +562,7 @@ audio::-internal-media-controls-download-button {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 1%;
 }
 
 .header-title-container {
@@ -586,6 +587,12 @@ audio::-internal-media-controls-download-button {
   padding: 20px 40px 20px 0;
 }
 
+.member-section {
+    font-family: inherit;
+    list-style-type: none;
+    width: 25%;
+}
+
 .section-header {
   font-family: "DeliciousRoman";
   color: #262228;
@@ -598,6 +605,7 @@ audio::-internal-media-controls-download-button {
   background: #AB8C6F;
   border-right: 1px white;
   content: "";
+  margin-bottom: 1%;
 }
 
 .director-header {
@@ -605,7 +613,7 @@ audio::-internal-media-controls-download-button {
   color: #262228;
   height: auto;
   display: block;
-  width: 40%;
+  width: 50%;
   border-bottom: 3px solid #AB8C6F;
   margin-bottom: 20px;
 }
