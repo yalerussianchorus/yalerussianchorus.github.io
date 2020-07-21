@@ -185,23 +185,23 @@ body {
     /* FOOTER */
 
 .footer {
-    width: 100%;
-    background-color: white;
-    font-family: "OpenSansL";
-    color: #262228;
-    border-top-style: solid;
-    border-top-color: #E7E7E7;
-    border-top-width: 1px;
-	padding-top: 15px;
-	margin-top: 15px;
-    /* bottom: 0;
-    left: 0;
-    right: 0; */
+  width: 100%;
+  background-color: white;
+  font-family: "OpenSansL";
+  color: #262228;
+  border-top-style: solid;
+  border-top-color: #E7E7E7;
+  border-top-width: 1px;
+  padding-top: 10px;
+  margin-top: 10px;
+  /* bottom: 0;
+  left: 0;
+  right: 0; */
 }
 
 .foot-text {
 	padding-left: 10px;
-    font-size: 10px;
+  font-size: 10px;
 }
 
 .socials {
@@ -262,14 +262,14 @@ body {
   top: 50%;
   left: 50%;
   z-index: -100;
-  min-width: 100%;
+  max-width: 100%;
   min-height: 100%;
   height: auto;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  overflow:hidden;
-  object-fit: contain;
+  overflow: hidden;
+  object-fit: cover;
 }
 @media (max-width: 800px) {
   .video-wrapper video {
