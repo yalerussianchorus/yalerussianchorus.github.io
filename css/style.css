@@ -593,9 +593,27 @@ audio::-internal-media-controls-download-button {
     width: 25%;
 }
 
+
+@media (max-width: 550px) {
+  .member-section {
+    font-family: inherit;
+    list-style-type: none;
+    width: 50%;
+  }
+}
+
 .section-header {
   font-family: "DeliciousRoman";
   color: #262228;
+}
+
+@media (max-width: 550px) {
+  .section-header {
+    font-family: "DeliciousRoman";
+    color: #262228;
+    margin-left: 3vw;
+    margin-right: 3vw;
+  }
 }
 
 .section-header:after {
@@ -613,7 +631,7 @@ audio::-internal-media-controls-download-button {
   color: #262228;
   height: auto;
   display: block;
-  width: 50%;
+  width: 95%;
   border-bottom: 3px solid #AB8C6F;
   margin-bottom: 20px;
 }
@@ -634,7 +652,7 @@ audio::-internal-media-controls-download-button {
 
 .troika-card {
   position: relative;
-  padding: 20px 20px 20px 20px;
+  padding: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -666,7 +684,6 @@ audio::-internal-media-controls-download-button {
   text-align: center;
   font-family: "LatoL";
   width: 300px;
-  height: 20px;
 }
 
 .modal-title {
@@ -722,7 +739,7 @@ audio::-internal-media-controls-download-button {
 }
 
 .tour-pic {
-	width: 500px;
+	width: 40vw;
 	margin-top: 0.5%;
 	margin-bottom: 0.5%;
 }
