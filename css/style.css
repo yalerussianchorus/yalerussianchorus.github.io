@@ -605,7 +605,6 @@ audio::-internal-media-controls-download-button {
 .section-header {
   font-family: "DeliciousRoman";
   color: #262228;
-  width: 50%;
 }
 
 @media (max-width: 550px) {
